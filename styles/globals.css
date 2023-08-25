@@ -1,0 +1,264 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*navbar*/
+
+.navbar {
+  z-index: 999;
+  height: 60px;
+  width: 100%;
+  color: var(--primary-color);
+  background-color: #aaa;
+  overflow: hidden;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.buttons-container {
+  float: right;
+}
+
+.button-empty {
+  width: 130px;
+  height: 40px;
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.button-full {
+  width: 130px;
+  height: 40px;
+  background: var(--primary-color);
+  color: white;
+  margin-top: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+.navbar-content {
+  height: 100%;
+}
+
+.logo {
+  height: 20px;
+  margin-right: 50px;
+  margin-top: 10px;
+  float: left;
+}
+
+.logo img {
+  height: 100%;
+  width:fit-content;
+}
+
+.menu-items {
+  height: 100%;
+  list-style-type: none;
+  float: left;
+}
+
+.menu-item {
+  display: inline-block;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.menu-item-clicked {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+/*foooter*/
+
+.footer {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  height: auto;
+  color: var(--primary-color);
+  background-color: white;
+  float: left;
+}
+
+.footer hr {
+  opacity: 0.5;
+  width: 100%;
+}
+
+.footer-upper-hr {
+  margin-bottom: 80px;
+}
+
+.footer-menu {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.footer-menu-left, .footer-menu-right {
+  height: 100%;
+  list-style-type: none;
+  flex: 1;
+}
+
+.footer-menu-left span, .footer-menu-right span {
+  display: inline-block;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.footer-menu-left {
+  display: block;
+  float: left;
+  justify-content: flex-start;
+  padding-left: 60px;
+}
+
+.footer-menu-right {
+  display: block;
+  padding-right: 60px;
+}
+
+.footer-menu-right .footer-menu-container {
+  width: fit-content;
+  float: right;
+}
+
+.footer-logo {
+  justify-content: center;
+  margin: 0 auto;
+  flex-basis: auto;
+}
+
+.footer-logo img {
+  height: 32px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.footer-bottom {
+  width: auto;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.footer-social {
+  display: table;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.footer-social-item {
+  width: 42px;
+  height: 42px;
+  float: left;
+}
+
+.footer-social-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: black;
+  opacity: 0.5;
+  padding-top: 20px;
+}
+
+/*naslovnica*/
+
+.home-hero {
+  width: 100%;
+  height: 80vh;
+  background-color:#023047;
+}
+
+.home-hero video {
+  position: absolute; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.home-hero-content {
+  position: absolute;
+  top: 60vh;
+  right: 100px;
+  width: 680px;
+  height: 25vh;
+}
+
+.home-hero-text {
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 2px black;
+  font-family: Bradley Hand ITC;
+  font-weight: 600;
+}
+
+.home-hero-button-container .button-full {
+  float: unset;
+  width: 200px;
+  font-size: 24px;
+  height: 60px;
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.home-hero-button-container {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4px;
+  padding-top: 8px;
+  color: black;
+  /* -webkit-box-shadow: 6px 4px 4px -2px #000000; 
+  box-shadow: 6px 4px 4px -2px #000000; */
+}
