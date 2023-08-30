@@ -17,8 +17,9 @@ const Steps = () => {
                             </div>
                         </div>
                         <div class="text-container">
-                            <h2>Title 1</h2>
-                            <p>This is some text for content 1.</p>
+                            <h2>Prijava</h2>
+                            <p>Potrebno je kreirati korisnički račun, te se prijaviti prilikom svake rezervacije termina.
+</p>
                         </div>
                     </div>
                 </div>
@@ -31,8 +32,8 @@ const Steps = () => {
                             </div>
                         </div>
                          <div class="text-container">
-                            <h2>Title 2</h2>
-                            <p>This is some text for content 2.</p>
+                            <h2>Odabir termina</h2>
+                            <p>Nakon unosa razine instrukcija, predmeta, te datuma ponudit ćeVam se slobodni termini.</p>
                          </div>
                     </div>
                 </div>
@@ -45,8 +46,8 @@ const Steps = () => {
                             </div>
                         </div>
                         <div class="text-container">
-                            <h2>Title 3</h2>
-                            <p>This is some text for content 3.</p>
+                            <h2>Potvrda</h2>
+                            <p>Nakon rezervacije, prikazat će se potvrda o uspješnoj rezervaciji termina.</p>
                         </div>
                     </div>
                 </div>

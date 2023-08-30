@@ -29,6 +29,9 @@ const Instructors = () => {
                     <div className="testimonial-image">
                          <img src={instruktor1.src}/> 
                     </div>
+                    <div className="button-container">
+                        <button className="button-empty">Learn More</button>
+                    </div>
                     <div className="testimonial-overlay"></div>
                 </div>
 

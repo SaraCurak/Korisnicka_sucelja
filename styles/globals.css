@@ -238,26 +238,29 @@ a {
   width: 100%;
   position: relative;
   height: 80vh; 
-  background-color:#3498DB;
-
+  margin-top: 60px;
+  background: url(../public/images/pozadina.jpg);
+  z-index: -2;
 }
-
+ 
 .home-hero::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 120%;
   height: 20px;
   width: 100%;
   left: 0;
-  background: url(https://svgur.com/i/wxt.svg) bottom;
+  background: url(../public/images/tear.svg) bottom;
   background-size: 40%;
   /* background-color:#3498DB; */
+  transform: rotate(180deg);
+  z-index: 5;
 }
 
 .home-hero-elements img{
   position: absolute;
-  bottom: 40px;
-  width: 20%;
+  bottom: -160px;
+  width: 25%;
   left: 50px;
 } 
 
@@ -339,12 +342,24 @@ a {
 }
 
 .testimonial-image {
-  width: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: diagonalBounce 2s infinite;
+ 
 }
 
 .testimonial-image img {
-  width:100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  position:absolute;
 }
 
 .testimonial-content {
@@ -385,7 +400,7 @@ a {
   opacity: 0.75;
 }
 
-.testimonial-overlay {
+/* .testimonial-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -393,9 +408,42 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(19, 138, 211, 0.5);
+  background-color: rgba(208, 153, 15, 0.5);
   z-index: 2;
 	overflow: hidden;
+} */
+
+.testimonial-overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(241, 199, 94, 0.5);
+  z-index: -1;
+	overflow: hidden;
+}
+
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding-right: 20px;
+}
+
+.testimonial-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 /* circle */
@@ -499,4 +547,201 @@ a {
 .text-container p {
   font-size: 20px;
   color: #333;
+}
+
+/* FAQ */
+/* .hero-image-container {
+  width: 100%;
+  height: 60vh;
+}
+
+.about-us-hero-image-container {
+  height: 50vh;
+}
+
+.faq-hero-image-container {
+}
+
+.faq-hero-image-container img {
+  top: -160vh;
+}
+
+.id-accordion .id-accordion-item {
+  border-bottom: 1px solid #29a0ee;
+}
+.id-accordion .id-accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #333333;
+}
+.id-accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.id-accordion button:hover, .id-accordion button:focus {
+  cursor: pointer;
+  color: #333333;
+}
+.id-accordion button:hover::after, .id-accordion button:focus::after {
+  cursor: pointer;
+  color: #333333;
+  border: 1px solid #333333;
+}
+.id-accordion button .id-accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.id-accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.id-accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.id-accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.id-accordion button[aria-expanded='true'] {
+  color: #333333;
+}
+.id-accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.id-accordion button[aria-expanded='true'] + .id-accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.id-accordion .id-accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.id-accordion .id-accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+#id-faq {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.id-accordion-content div {
+  padding: 20px;
+} */
+/* Reset some default styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.faqContainer {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100vh;
+}
+
+.faqTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faqColumns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Space between columns and rows */
+  max-width: 1200px; /* Maximum width of the columns */
+  margin: 0 auto; /* Center the columns */
+}
+
+.faqItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.faqQuestionCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+   background-color: #ffcc00 /*#197eff*/;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.faqQuestionCircle:hover {
+  background-color: #ff9900;
+  transform: scale(1.1);
+  animation: bounce 0.6s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.faqItem.expanded .faqQuestionCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+.zigzag {
+  border-bottom: 1px dashed #ccc;
+  margin-top: 40px;
 }

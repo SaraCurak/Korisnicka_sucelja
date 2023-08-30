@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import teacher2 from '../public/images/teacher2.png'
-import paper2 from '../public/images/paper2.png'
+import pozadina from '../public/images/pozadina.jpg'
 
 
 const Cover = () => {
