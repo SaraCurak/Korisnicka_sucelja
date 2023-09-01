@@ -9,10 +9,11 @@ import instruktor6 from '../public/images/Instructors/instruktor6.jpg'
 
 const Instructors = () => {
     const [isClicked, setIsClicked] = useState(false);
+    
 
     useEffect(() => {
     }, []);
-
+      
     return (
         <div className="testimonial-container">
             <div className="box">
@@ -30,7 +31,7 @@ const Instructors = () => {
                          <img src={instruktor1.src}/> 
                     </div>
                     <div className="button-container">
-                        <button className="button-empty">Learn More</button>
+                        <button className="button">Learn More</button>
                     </div>
                     <div className="testimonial-overlay"></div>
                 </div>

@@ -5,8 +5,7 @@ import styles from '@/styles/Home.module.css'
 
 import Navbar from '../components/Navbar'
 import Footer from '@/components/Footer'
-import Layout from '../components/Cover'
-
+import Clock from '@/components/Clock'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Cjenik() {
@@ -18,9 +17,8 @@ export default function Cjenik() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Layout />
+      <Clock />
       <Footer />
-      <h1>kooooooooooooooooo</h1>
     </div>
   )
 }

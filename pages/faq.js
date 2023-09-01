@@ -5,30 +5,6 @@ import Main from '../components/Main'
 import Footer from '../components/Footer'
 const entriesList = [
   {
-    question: "Kako rezervirati termin za instrukcije?",
-    answer: "Rezervacija termina za instrukcije je jednostavna! Samo posjetite našu stranicu za rezervaciju, odaberite predmet za koji trebate pomoć i odaberite dostupno vrijeme. Slijedite korake kako biste potvrdili svoju rezervaciju.",
-  },
-  {
-    question: "Koji predmeti su dostupni za instrukcije?",
-    answer: "Nudimo instrukcije iz širokog spektra predmeta, uključujući matematiku, znanost, jezike i više. Provjerite naš popis predmeta kako biste pronašli pomoć koja vam je potrebna.",
-  },
-  {
-    question: "Imaju li vaši instruktori iskustva?",
-    answer: "Apsolutno! Naši instruktori su visoko iskusni u svojim predmetima. Posvećeni su poučavanju i predanosti vašem uspjehu.",
-  },
-  {
-    question: "Mogu li promijeniti svoj raspored instrukcija?",
-    answer: "Da, možete! Ako trebate promijeniti svoj raspored instrukcija, prijavite se na svoj račun i idite na odjeljak 'Moje rezervacije'. Tamo možete premjestiti svoju sesiju.",
-  },
-  {
-    question: "Je li dostupna online instrukcija?",
-    answer: "Da, nudimo online instrukcije. Možete se povezati s instruktorom iz udobnosti svog doma i dobiti personaliziranu pomoć.",
-  },
-  {
-    question: "Koliko traje svaka instrukcijska sesija?",
-    answer: "Naša standardna instrukcijska sesija obično traje 1 sat. Međutim, možete također rezervirati dulje sesije ako je potrebno.",
-  },
-  {
     question: "Kako izvršiti plaćanje?",
     answer: "Plaćanja se mogu izvršiti putem našeg sigurnog online sustava za plaćanje. Prihvaćamo glavne kreditne kartice i PayPal radi vaše praktičnosti.",
   },
@@ -37,24 +13,50 @@ const entriesList = [
     answer: "Ne, transparentni smo u vezi naše cijene. Trošak koji vidite prilikom rezervacije je ukupni trošak. Nema dodatnih skrivenih troškova.",
   },
   {
+    question: "Kada trebam izvršiti plaćanje?",
+    answer: "Nakon što rezervirate termin, dobit ćete potvrdu rezervacije koja će sadržavati detalje o plaćanju. Preporučujemo da izvršite plaćanje što je prije moguće kako biste osigurali svoj termin."
+  },
+  {
     question: "Mogu li zatražiti određenog instruktora?",
     answer: "Da, možete! Prilikom rezervacije sesije imate mogućnost odabira određenog instruktora na temelju njihove dostupnosti.",
   },
   {
-    question: "Što ako nisam zadovoljan instrukcijskom sesijom?",
-    answer: "Vaše zadovoljstvo nam je važno. Ako niste zadovoljni sesijom, javite nam i potrudit ćemo se da riješimo vaše brige.",
+    question: "Imaju li vaši instruktori iskustva?",
+    answer: "Apsolutno! Naši instruktori su visoko iskusni u svojim predmetima. Posvećeni su poučavanju i predanosti vašem uspjehu.",
   },
   {
-  question: "Kako rezervirati termin za instrukcije?",
-  answer: "Rezervacija termina za instrukcije je jednostavna! Samo posjetite našu stranicu za rezervaciju, odaberite predmet za koji trebate pomoć i odaberite dostupno vrijeme. Slijedite korake kako biste potvrdili svoju rezervaciju.",
+    question: "Kako se odabiru instruktori za vašu platformu?",
+    answer: "Svi naši instruktori prolaze kroz temeljitu procjenu njihovog stručnog znanja i pedagoških vještina. Vodimo računa i o ocjenama koje dobivaju od učenika kako bismo osigurali visok standard kvalitete podučavanja."
+  },  
+  {
+    question: "Je li dostupna online instrukcija?",
+    answer: "Da, nudimo online instrukcije. Možete se povezati s instruktorom iz udobnosti svog doma i dobiti personaliziranu pomoć.",
   },
   {
-  question: "Koliko traje standardna instrukcijska sesija?",
-  answer: "Naša standardna instrukcijska sesija obično traje 1 sat. Međutim, možete također rezervirati dulje sesije ako je potrebno.",
+    question: "Kako rezervirati termin za instrukcije?",
+    answer: "Posjetite našu stranicu za rezervaciju, odaberite predmet za koji trebate pomoć i odaberite dostupno vrijeme. Slijedite korake kako biste potvrdili svoju rezervaciju.",
   },
-  // Dodajte još pitanja i odgovora...
+  {
+    question: "Mogu li promijeniti svoj raspored instrukcija?",
+    answer: "Da, možete! Ako trebate promijeniti svoj raspored instrukcija, prijavite se na svoj račun i idite na odjeljak 'Moje rezervacije'. Tamo možete premjestiti svoju sesiju.",
+  },
 ];
 
+
+const rows = [
+  {
+    title: "Plaćanje",
+    circles: [0, 1, 2],
+  },
+  {
+    title: "Instruktori",
+    circles: [3, 4, 5],
+  },
+  {
+    title: "Termini",
+    circles: [6, 7, 8],
+  },
+];
 
 export default function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -69,29 +71,39 @@ export default function FAQ() {
 
   return (
     <div className="container">
-      <Navbar/>
+      <Navbar />
       <div className="faqContainer">
         <h1 className="faqTitle">Frequently Asked Questions</h1>
-        <div className="faqColumns">
-          {entriesList.map((item, index) => (
-            <div
-              key={index}
-              className={`faqItem ${expandedIndex === index ? 'expanded' : ''}`}
-            >
-              <div
-                className="faqQuestionCircle"
-                onClick={() => toggleAnswer(index)}
-                aria-expanded={expandedIndex === index}
-              >
-                {expandedIndex === index ? item.answer : item.question}
+        <div className="faqRows">
+          {rows.map((row, rowIndex) => (
+            <div key={rowIndex} className="faqRow">
+              <h2 className="faqRowTitle">{row.title}</h2>
+              <div className="faqCircles">
+                {row.circles.map((circleIndex) => (
+                  <div
+                    key={circleIndex}
+                    className={`faqItem ${
+                      expandedIndex === circleIndex ? 'expanded' : ''
+                    }`}
+                  >
+                    <div
+                      className="faqQuestionCircle"
+                      onClick={() => toggleAnswer(circleIndex)}
+                      aria-expanded={expandedIndex === circleIndex}
+                    >
+                      {expandedIndex === circleIndex
+                        ? entriesList[circleIndex].answer
+                        : entriesList[circleIndex].question}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
         </div>
         <div className="zigzag"></div>
-      <Footer/></div>    
-      
+        <Footer />
+      </div>
     </div>
-
   );
 }

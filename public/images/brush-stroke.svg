@@ -1,0 +1,3 @@
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0,50 Q30,0 60,50 T120,50 Q150,100 180,50 T240,50 Q270,0 300,50" fill="#ccc" />
+</svg>

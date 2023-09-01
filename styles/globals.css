@@ -121,13 +121,22 @@ a {
   color: var(--primary-color);
   background-color: white;
   float: left;
-} */
+} 
 .footer {
   background-color: #333333;
   color: #ffffff;
   padding: 20px;
   text-align: center;
-}
+}*/
+.footer {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  height: auto;
+  color: var(--primary-color);
+  background-color: #333333;
+  float: left;
+} 
 
 .footer hr {
   opacity: 0.5;
@@ -188,7 +197,7 @@ a {
 .footer-bottom {
   width: auto;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 .footer-social {
@@ -427,16 +436,14 @@ a {
 	overflow: hidden;
 }
 
-
 .button-container {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  flex: 1; /* Take remaining space */
+  display: flex;
+  justify-content: flex-end; /* Align button to the right */
   padding-right: 20px;
 }
 
-.testimonial-button {
+.button {
   background-color: #3498db;
   color: white;
   border: none;
@@ -445,12 +452,11 @@ a {
   cursor: pointer;
   font-size: 14px;
 }
-
 /* circle */
 .content-container {
   display: flex;
   flex-direction: column;
-  align-items:normal;
+  align-items: normal;
   margin-left: 50px;
   height: 200vh;
   width: 70%;
@@ -459,17 +465,31 @@ a {
 .row {
   height: 350px;
   margin-bottom: 0;
-  position: relative; 
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row:nth-child(1) .element-set .circle {
+  animation: diagonalBounce 2s infinite;
+}
+
+.row:nth-child(2) .element-set {
+  flex-direction: row-reverse;
+  text-align: right;
+  margin-left: auto;
 }
 
 .row:nth-child(2) .element-set .circle {
-  left: 800px; 
+  position: absolute;
+  right: 50px;
   animation: slide 2s linear infinite;
 }
 
 .row:nth-child(3) .element-set .circle {
-   animation: diagonalBounce 2s infinite; 
- }
+  animation: diagonalBounce 2s infinite;
+}
 
 .element-set {
   display: flex;
@@ -498,7 +518,6 @@ a {
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
   position: relative;
-  left: 50px;
   animation: bounce 2s infinite;
 }
 
@@ -529,9 +548,8 @@ a {
   }
 }
 
-
 .row:nth-child(2) .text-container h2 {
-  text-align: right; 
+  text-align: right;
 }
 
 .text-container {
@@ -548,6 +566,8 @@ a {
   font-size: 20px;
   color: #333;
 }
+
+
 
 /* FAQ */
 /* .hero-image-container {
@@ -703,8 +723,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 190px;
+  height: 190px;
    background-color: #ffcc00 /*#197eff*/;
   border-radius: 50%;
   font-size: 18px;
@@ -744,4 +764,212 @@ a {
 .zigzag {
   border-bottom: 1px dashed #ccc;
   margin-top: 40px;
+}
+
+
+.faqRows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqRow {
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.faqRowTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+}
+
+.faqCircles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* cjenik */
+
+
+/* kontakt */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+.contact-main-title{
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px; /* Smaller padding */
+  border: 1px dotted #000;
+  border-radius: 10px;
+  /* Rounded shape for the item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 10px); /* Smaller width for 3 columns */
+}
+
+/* Style for the contact icon (using Font Awesome) */
+.contact-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  width: 40px; /* Adjust the width of the icon container */
+  height: 40px; /* Adjust the height of the icon container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcc00; /* Background color for the circle */
+  border-radius: 70%; /* Rounded shape for the circle */
+
+}
+.contact-title {
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Style for the contact text */
+.contact-text {
+  font-size: 12px; /* Smaller text size */
+}
+
+/* Adjust margins and paddings as needed */
+.contact-item h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact-item p {
+  font-size: 12px;
+  color: #555;
+  margin: 0;
+}
+/* Add this CSS to style the contact form */
+
+/* Form container */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form fields */
+.form-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px dotted #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Set the width to 70% */
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #ff9900;
+}
+
+/* sat */
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #333;
+  border-radius: 50%;
+}
+
+.hand {
+  position: absolute;
+  height: 2px;
+  background-color: #333;
+  transform-origin: 0 50%;
+  transform: rotate(0deg);
+}
+
+.hour-hand {
+  width: 50px;
+}
+
+.minute-hand {
+  width: 70px;
+}
+
+/* Set initial positions for the clock hands */
+.hour-hand {
+  transform: rotate(0deg);
+}
+
+.minute-hand {
+  transform: rotate(270deg);
 }
