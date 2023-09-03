@@ -24,6 +24,7 @@ const Instructors = () => {
                 </div>       
             </div>
 
+      
             <div className="tile">
 
                 <div className="col-lg-6">

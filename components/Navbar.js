@@ -1,9 +1,6 @@
-import React from 'react'
-import logoSrc from '../public/images/logo.png'
-import { useState } from 'react'
-import { useEffect } from 'react';
-import Image from 'next/image';
-import {useRouter} from 'next/router';
+import React, { useState, useEffect } from 'react';
+import logoSrc from '../public/images/logo.png';
+import { useRouter } from 'next/router';
 
 const menuItemsList = [
   {
@@ -47,53 +44,55 @@ const Navbar = () => {
   const [menuItems, setMenuItems] = useState(menuItemsList);
   const [isClicked, setIsClicked] = useState(false);
   const [test123, setTest123] = useState([]);
-  const router = useRouter()
-  
-  useEffect(() => {
+  const router = useRouter();
 
-    console.log(logoSrc)
+ useEffect(() => {
 
-    let updatedMenuItems = menuItemsList.map(item => {
-        if(item.slug == router.pathname.split('/').pop()) item.isClicked = true;
-        return item;
-    })
+  console.log(logoSrc)
 
-    setMenuItems(updatedMenuItems);
-    setIsClicked(true);
-  }, [test123]);
+  let updatedMenuItems = menuItemsList.map(item => {
+      if(item.slug == router.pathname.split('/').pop()) item.isClicked = true;
+      return item;
+  })
+
+  setMenuItems(updatedMenuItems);
+  setIsClicked(true);
+}, [test123]);
 
   return (
     <header>
-    <nav className="navbar sticky-nav">
+      <nav className="navbar sticky-nav">
+
         <div className="box navbar-content">
-            <div className="logo">
-                <a href="/">
-                    <img src={logoSrc.src}/>
-                </a>
-            </div>
-            <ul className="menu-items">
-                        {menuItems.map((item) => (
-                            <a href={item.slug} key={item.slug + item.name}><li className={`menu-item ${item.isClicked ? "menu-item-clicked" : ""}`}>{item.name}</li></a>
-                        ))}
-            </ul>
-            <div className="buttons-container">
-                <a href="/account">
-                    <button className="button-empty">
-                        <span> Prijavi se </span>
-                    </button>
-                </a>
-
-                <a href="/shop">
-                    <button className="button-full">
-                        <span> Registriraj se </span>
-                    </button>
-                </a>
-            </div>
+          <div className="logo">
+            <a href="/">
+              <img src={logoSrc.src} alt="Logo" />
+            </a>
           </div>
-    </nav>
+          <ul className="menu-items">
+            {menuItems.map((item) => (
+              <a href={item.slug} key={item.slug + item.name}>
+                <li className={`menu-item ${item.isClicked ? "menu-item-clicked" : ""}`}>{item.name}</li>
+              </a>
+            ))}
+          </ul>
+          <div className="buttons-container">
+            <a href="/account">
+              <button className="button-empty">
+                <span> Prijavi se </span>
+              </button>
+            </a>
+
+            <a href="/shop">
+              <button className="button-full">
+                <span> Registriraj se </span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
+  );
+};
 
-  )
-}
-
-export default Navbar
+export default Navbar;

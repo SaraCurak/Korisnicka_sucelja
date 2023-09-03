@@ -70,8 +70,9 @@ export default function FAQ() {
   };
 
   return (
-    <div className="container">
+    <div>
       <Navbar />
+      <div className="container">
       <div className="faqContainer">
         <h1 className="faqTitle">Frequently Asked Questions</h1>
         <div className="faqRows">
@@ -102,8 +103,8 @@ export default function FAQ() {
           ))}
         </div>
         <div className="zigzag"></div>
+      </div></div>
         <Footer />
-      </div>
     </div>
   );
 }

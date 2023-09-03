@@ -22,7 +22,8 @@ a {
   height: 60px;
   width: 100%;
   color: var(--primary-color);
-  background-color: #aaa;
+  background-color: #197eff;
+  color: white;
   overflow: hidden;
 }
 
@@ -40,7 +41,7 @@ a {
   width: 130px;
   height: 40px;
   background: white;
-  color: var(--primary-color);
+  color: black;
   border: 1px solid var(--primary-color);
   border-radius: 8px;
   margin-top: 10px;
@@ -109,6 +110,29 @@ a {
     color: white;
     background: black;
   }
+}
+
+.underline-text {
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  position: relative;
+  display: inline-block;
+}
+
+.underline-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust the position of the underline */
+  width: 100%;
+  height: 1px; /* Thickness of the underline */
+  background-color: #000; /* Color of the underline */
+  transform: scaleX(0); /* Initially, set the scale to 0 to hide the underline */
+  transform-origin: center;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.underline-text.clicked::after {
+  transform: scaleX(1); /* Scale the underline to show it on click */
 }
 
 /*foooter*/
@@ -685,7 +709,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #f0f0f0;
 }
 
@@ -694,8 +719,6 @@ a {
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  height: 100vh;
 }
 
 .faqTitle {
@@ -796,6 +819,13 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .faqContainer .faqRows .faqRow{
+   
+    width: 30%;
+
+  }
+}
 /* cjenik */
 
 
@@ -871,7 +901,6 @@ a {
   color: #555;
   margin: 0;
 }
-/* Add this CSS to style the contact form */
 
 /* Form container */
 .contact-form {
@@ -925,7 +954,7 @@ a {
   font-size: 16px;
 }
 
-.contact-form button[type="submit"] {
+.contact-form .cf-button[type="submit"] {
   background-color: #ffcc00;
   color: #000;
   font-size: 18px;
@@ -936,40 +965,250 @@ a {
   transition: background-color 0.3s ease;
 }
 
-.contact-form button[type="submit"]:hover {
+.contact-form .cf-button[type="submit"]:hover {
   background-color: #ff9900;
 }
 
-/* sat */
-.clock {
+
+/* PriceList.css */
+
+.price-list-container {
+  background-image: url("../public/images/bg-bw.png"); /* Replace 'your-background-image.jpg' with your image URL */
+  background-repeat: repeat;
+  background-size: 600px;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh; /* Ensure the container covers the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+
+h2 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  text-align: center; /* Center align the text */
+  color: #000;
+  background-color: #fff;
   position: relative;
-  width: 200px;
-  height: 200px;
-  border: 5px solid #333;
-  border-radius: 50%;
+  z-index: 0;
+  padding-bottom: 2px; /* Set position to relative for pseudo-elements */
 }
 
-.hand {
+.brush::before,
+.brush::after {
+  content: "";
   position: absolute;
-  height: 2px;
-  background-color: #333;
-  transform-origin: 0 50%;
-  transform: rotate(0deg);
-}
-
-.hour-hand {
-  width: 50px;
-}
-
-.minute-hand {
   width: 70px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-/* Set initial positions for the clock hands */
-.hour-hand {
-  transform: rotate(0deg);
+.brush::before {
+  left: -10px;
+  top: 0;
+  z-index: -1;
+  background-image: url("../public/images/left-painting.png");
 }
 
-.minute-hand {
-  transform: rotate(270deg);
+.brush::after {
+  right: -70px;
+  top: 0;
+  background-image: url("../public/images/right-paintingg.png");
+  width: 78px; /* Adjust the width to match the image width */
+  height: 34px;
+  z-index: -2; /* Adjust the height to match the image height */
 }
+
+.price-items {
+  display: flex;
+  justify-content:center; /* Place items side by side */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.price-item-ind {
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgba(9, 133, 234, 0.452);
+  text-align: center;
+}
+
+.price-list-ind {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: fit-content;
+  align-items: center;
+  background-color: #3498db; /* Center the price list */
+}
+
+.price-item-ind p {
+  margin: 5px;
+}
+
+.circle-details {
+  text-align: center;
+  
+}
+
+.circle-box {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.cta-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cta-button:hover {
+  background-color: #2674b7;
+}
+.price-list {
+  display: flex;
+  flex-direction: column;
+ /* Light grey background color */
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 60px; /* Center the price list */
+}
+
+.price-item {
+  display: flex;
+  border-radius: 15px;
+  margin-bottom: 20px; /* Increase the bottom margin for more height */
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  height: 360px;
+
+  
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line-container {
+  height: 100%;
+}
+
+.vertical-line {
+  width: 8px;
+  background-color: #3498db; /* Color of the vertical line */
+  /* Adjust the height to match the price-item height */
+  height: 100%;
+}
+
+h2 {
+  margin: 0 0 10px 0; /* Add space below title */
+  font-size: 24px; /* Increase font size */
+}
+
+p {
+  margin: 0 0 10px 0; /* Add space below paragraph */
+  font-size: 16px; /* Reduce font size */
+}
+
+.price {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Add bullets in front of <br> elements */
+.price-item br::before {
+  content: "\2022"; /* Bullet character */
+  margin-right: 5px;
+  color:#3498db;/* Space between bullet and text */
+}
+
+/* Style for the bullet points */
+.price-item ul {
+  list-style-type:disc;
+  padding-left: 20px;
+  margin: 0;
+}
+.price-item li {
+  margin: 5px 0;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .price-list .right-side {
+    padding-right: 12px;
+  }
+}
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+

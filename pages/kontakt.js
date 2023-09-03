@@ -79,7 +79,7 @@ const ContactPage = () => {
               <label htmlFor="question">Your Question:</label>
               <textarea id="question" name="question" rows="4" />
 
-              <button type="submit">Submit</button>
+              <button className="button-55" type="submit">Submit</button>
             </form>
           </div>
         
@@ -90,4 +90,5 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
 
