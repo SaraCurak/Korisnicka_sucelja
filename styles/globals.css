@@ -348,12 +348,22 @@ a {
  /* Style for the Cover1 Container */
 /* Add your existing CSS here */
 .cover-container {
-  background-color: #fff; /* Light grey background color */
+  background-color: red; /* Light grey background color */
   padding: 20px;
   width: 100%; /* Adjust width as needed */
   margin: 0 auto;
    /* Center the cover container */
 }
+/* Add this CSS for the curved top image */
+.curvy-bottom {
+  position: absolute;
+  bottom: -775px;
+  right: 0;
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  z-index: 1; /* Adjust the z-index as needed */
+}
+
 .cover-content {
   display: flex;
   justify-content: space-between;
@@ -417,7 +427,8 @@ h2.brush {
   justify-content: center; /* Center horizontally */
   align-items: flex-start; /* Align to the top */
   transition: transform 0.3s ease;
-  margin-bottom: 120px; /* Add smooth transition for hover effect */
+  margin-bottom: 120px; 
+  z-index: 10;/* Add smooth transition for hover effect */
 }
 
 .cover-image:hover {
@@ -425,16 +436,215 @@ h2.brush {
  /* Move 20px up and 20px to the left on hover */
 }
 
-
-
-
-
-
 /* Placeholder image styling */
 img {
   max-width: max-content;
   height: 100%;
   display: block;
+}
+
+
+/* Cover2 */
+.cover2-container {
+  background-color: #3498db; /* Light grey background color */
+  padding: 20px;
+  width: 100%; /* Adjust width as needed */
+  margin: 0 auto;
+   /* Center the cover container */
+}
+/* Add this CSS for the curved top image */
+/* Cover2 */
+.cover2-container {
+  background-color: #3498db;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .cover2-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+h2.brush {
+  margin: 50px 20px 20px 0;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 2px;
+  display: inline-block;
+}
+
+.brushed-title-container-cover::before,
+.brushed-title-container-cover::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.brushed-title-container-cover::before {
+  left: -20px;
+  top: 50%;
+  background-image: url("../public/images/left-painting.png");
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.brushed-title-container-cover::after {
+  right: -100px;
+  top: 50%;
+  background-image: url("../public/images/right-paintingg.png");
+  transform: translateY(-50%);
+  width: 110px;
+  height: 50px;
+  z-index: -2;
+}
+
+/* .cover2-text {
+  margin-top: 50px;
+  flex: 1; 
+  width: auto; 
+  height: 60vh;
+} */
+
+/* Cover2 */
+/* Cover2 */
+/* Cover2 */
+/* Cover2 */
+.cover2-container {
+  background-color: #3498db;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cover2-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2.brush {
+  margin: 50px 20px 20px 0;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 2px;
+  display: inline-block;
+}
+
+.brushed-title-container-cover::before,
+.brushed-title-container-cover::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.brushed-title-container-cover::before {
+  left: -20px;
+  top: 50%;
+  background-image: url("../public/images/left-painting.png");
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.brushed-title-container-cover::after {
+  right: -100px;
+  top: 50%;
+  background-image: url("../public/images/right-paintingg.png");
+  transform: translateY(-50%);
+  width: 110px;
+  height: 50px;
+  z-index: -2;
+}
+
+.cover2-text {
+  margin-top: 50px;
+  margin-right: 20px;
+  flex: 1;
+  width: auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column; /* Align text vertically */
+  justify-content: center; /* Center text vertically */
+}
+
+.cover2-text p {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px; /* Adjusted margin for better spacing between paragraphs */
+  font-weight: bold;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add this to space icons evenly */
+  flex: 0.9;
+  margin-top: 50px;
+}
+
+.icon {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.icon:last-child {
+  margin-right: 0;
+}
+
+/* Add white circle with a dotted border */
+.icon::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border: 2px dotted #3498db;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%; /* Vertically center the circle */
+  left: 50%; /* Horizontally center the circle */
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover::before {
+  background-color: orange;
+}
+
+.icon img {
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+  position: relative;
+}
+
+.icon h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon p {
+  font-size: 14px;
+  text-align: center;
 }
 
 

@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import Main from '../components/Main'
 import Cover from '../components/Cover'
 import Cover1 from '../components/Cover1'
+import Cover2 from '../components/Cover2'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
       </Navbar>
       <Cover />
       <Cover1 />
+      <Cover2 />
       <Footer />
     </div>
   )

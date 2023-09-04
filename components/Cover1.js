@@ -1,6 +1,7 @@
 import React from 'react';
 import girl from '../public/images/girl.png'
 import girlb from '../public/images/girl-back.png'
+import curvy from '../public/images/curvy-bottom.png'
 
 
 const Cover1 = () => {
@@ -26,6 +27,7 @@ const Cover1 = () => {
         {/* <img src={girlb.src} alt="Background Image" className="cover-background-image" /> */}
           <img src={girl.src}/>
         </div>
+        <img src={curvy.src} className="curvy-bottom"/>
       </div>
     </div>
   );
