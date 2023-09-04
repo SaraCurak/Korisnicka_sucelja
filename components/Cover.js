@@ -12,24 +12,24 @@ const Cover = () => {
     }, []);
 
     return (
-            <div className="home-hero">
-                <div className="home-hero-elements">
-                    <img src={teacher2.src} alt="teacher" />
-                    <div className="home-hero-content">
-                        <div className="home-hero-text">
-                        "Učenje nikada ne prestaje."
-                        </div>
-                        <div className="home-hero-button-container">
-                                <a href="/shop">
-                                    <button className="button-full">
-                                        <span> Rezerviraj termin </span>
-                                    </button>
-                                </a>
-                        </div>
-                    </div>
-                </div>
+    <div className="home-hero">
+        <div className="home-hero-elements">
+          <img src={teacher2.src} alt="teacher" className="teacher-image" />
+          <div className="home-hero-content">
+            <div className="home-hero-text">
+              "Učenje nikada ne prestaje."
             </div>
-            );
-};
+            <div className="home-hero-button-container">
+              <a href="/shop">
+                <button className="button-55">
+                  <span> Rezerviraj termin </span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
             
 export default Cover;

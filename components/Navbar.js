@@ -78,14 +78,8 @@ const Navbar = () => {
           </ul>
           <div className="buttons-container">
             <a href="/account">
-              <button className="button-empty">
+              <button className="button-55">
                 <span> Prijavi se </span>
-              </button>
-            </a>
-
-            <a href="/shop">
-              <button className="button-full">
-                <span> Registriraj se </span>
               </button>
             </a>
           </div>

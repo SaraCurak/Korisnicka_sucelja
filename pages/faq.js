@@ -70,41 +70,43 @@ export default function FAQ() {
   };
 
   return (
-    <div>
-      <Navbar />
-      <div className="container">
-      <div className="faqContainer">
-        <h1 className="faqTitle">Frequently Asked Questions</h1>
-        <div className="faqRows">
-          {rows.map((row, rowIndex) => (
-            <div key={rowIndex} className="faqRow">
-              <h2 className="faqRowTitle">{row.title}</h2>
-              <div className="faqCircles">
-                {row.circles.map((circleIndex) => (
-                  <div
-                    key={circleIndex}
-                    className={`faqItem ${
-                      expandedIndex === circleIndex ? 'expanded' : ''
-                    }`}
-                  >
-                    <div
-                      className="faqQuestionCircle"
-                      onClick={() => toggleAnswer(circleIndex)}
-                      aria-expanded={expandedIndex === circleIndex}
-                    >
-                      {expandedIndex === circleIndex
-                        ? entriesList[circleIndex].answer
-                        : entriesList[circleIndex].question}
-                    </div>
+      <div>
+        <Navbar />
+          <div className="container">
+          <div className="faqContainer">
+            <h1 className="faqTitle">Često postavljana pitanja</h1>
+            <div className="faqRows">
+              {rows.map((row, rowIndex) => (
+                <div key={rowIndex} className="faqRow">
+                  <h2 className="faqRowTitle brushed-title-container">
+                  <span className="brushed-title">{row.title}</span></h2>
+                  <div className="faqCircles">
+                    {row.circles.map((circleIndex) => (
+                      <div
+                        key={circleIndex}
+                        className={`faqItem ${
+                          expandedIndex === circleIndex ? 'expanded' : ''
+                        }`}
+                      >
+                        <div
+                          className="faqQuestionCircle"
+                          onClick={() => toggleAnswer(circleIndex)}
+                          aria-expanded={expandedIndex === circleIndex}
+                        >
+                          {expandedIndex === circleIndex
+                            ? entriesList[circleIndex].answer
+                            : entriesList[circleIndex].question}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-          ))}
+            <div className="zigzag"></div>
+          </div>
+          </div>
+          <Footer />
         </div>
-        <div className="zigzag"></div>
-      </div></div>
-        <Footer />
-    </div>
   );
 }

@@ -266,47 +266,47 @@ a {
   background-size:200%;
 } */
 
-
 .home-hero {
   width: 100%;
   position: relative;
-  height: 80vh; 
   margin-top: 60px;
   background: url(../public/images/pozadina.jpg);
-  z-index: -2;
-}
- 
-.home-hero::after {
-  content: "";
-  position: absolute;
-  top: 120%;
-  height: 20px;
-  width: 100%;
-  left: 0;
-  background: url(../public/images/tear.svg) bottom;
-  background-size: 40%;
-  /* background-color:#3498DB; */
-  transform: rotate(180deg);
-  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
 }
 
-.home-hero-elements img{
-  position: absolute;
-  bottom: -160px;
-  width: 25%;
-  left: 50px;
-} 
+.home-hero-elements {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.teacher-image {
+  width: 45%;
+  max-width: 400px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  margin-right: 35%;
+  margin-top: 20px; /* Adjust the margin-top value to move the teacher image down */
+}
 
 .home-hero-content {
-  position: absolute;
-  top: 60vh;
-  right: 100px;
-  width: 680px;
-  height: 25vh;
-} 
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 280px;
+}
 
 .home-hero-text {
-  font-size: 48px;
+  font-size: 35px;
   text-align: center;
   color: white;
   text-shadow: 3px 3px 2px black;
@@ -314,37 +314,130 @@ a {
   font-weight: 600;
 }
 
-.home-hero-button-container .button-full {
-  float: unset;
-  width: 200px;
-  font-size: 24px;
-  height: 60px;
-  color: black;
-  background-color: white;
-  border-radius: 8px;
-}
-
-.home-hero-button-container {
+.home-hero::after {
+  content: "";
   width: 100%;
-  height: 60px;
-  text-align: center;
+  height: 70px;
+  background: url(../public/images/bottom-pattern.png) repeat-x;
+  z-index: 3;
+}
+@media (max-width: 768px) {
+  .home-hero-elements {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .teacher-image {
+    width: 50%;
+    max-width: 300px;
+    margin-top: 20px;
+    z-index: 1;
+  }
+
+  .home-hero-content {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .home-hero-button-container .button-full {
+    width: 150px;
+    font-size: 16px;
+    height: 40px;
+  }
+}
+ /* Style for the Cover1 Container */
+/* Add your existing CSS here */
+.cover-container {
+  background-color: #fff; /* Light grey background color */
+  padding: 20px;
+  width: 100%; /* Adjust width as needed */
   margin: 0 auto;
-  margin-top: 4px;
-  padding-top: 8px;
-  color: black;
-  /* -webkit-box-shadow: 6px 4px 4px -2px #000000; 
-  box-shadow: 6px 4px 4px -2px #000000; */
+   /* Center the cover container */
+}
+.cover-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2.brush {
+  margin: 50px 20px 20px 0;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  background-color: #3498db;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 2px;/* VAMO MINJAT ZA TITLE VELICINU */
+  display: inline-block; 
 }
 
-.torn-edge {
-  position:absolute;
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  height: auto;
-  background-image:'paper2.png'; 
-  background-size:cover;
+.brushed-title-container-cover::before,
+.brushed-title-container-cover::after {
+  content: "";
+  position: absolute;
+  width: 100px; /* Increase the width of the brush stroke images */
+  height: 50px; /* Increase the height of the brush stroke images */
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
+.brushed-title-container-cover::before {
+  left: -20px; /* Adjust the positioning of the left brush stroke */
+  top: 50%; /* Position it vertically in the middle */
+  background-image: url("../public/images/left-painting.png"); /* Replace with the actual path to your left brush stroke image */
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.brushed-title-container-cover::after {
+  right: -100px; /* Adjust the positioning of the right brush stroke */
+  top: 50%; /* Position it vertically in the middle */
+  background-image: url("../public/images/right-paintingg.png"); /* Replace with the actual path to your right brush stroke image */
+  transform: translateY(-50%); /* Center vertically */
+  width: 110px; /* Set the width to match the image width */
+  height: 50px; /* Set the height to match the image height */
+  z-index: -2;
+}
+
+.cover-text {
+  margin-top: 50px;
+  flex: 3;
+  width:max-content;
+  height:60vh; /* Increased flex value for more height */
+}
+.cover-text p{
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 60px; /* Increased margin for more space between paragraphs */
+  font-weight:bold;
+}
+.cover-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align to the top */
+  transition: transform 0.3s ease;
+  margin-bottom: 120px; /* Add smooth transition for hover effect */
+}
+
+.cover-image:hover {
+  transform: scale(1.2);
+ /* Move 20px up and 20px to the left on hover */
+}
+
+
+
+
+
+
+/* Placeholder image styling */
+img {
+  max-width: max-content;
+  height: 100%;
+  display: block;
+}
+
+
 
 /*main */
 .ingredients-container {
@@ -358,7 +451,12 @@ a {
 /* Testimonials */
 
 .testimonial-container {
-  margin-top: 150px;
+
+  max-width: 1000px; /* Adjust the maximum width as per your preference */
+  margin: 0 auto;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+  margin-top: 200px;
 }
 
 .testimonial-container .col-lg-6 {
@@ -371,8 +469,15 @@ a {
 
 .testimonial-container > .tile > div {
   position: relative;
-  display: table; 
+  display: table;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  background-color: #fff;
+  z-index: -2;
 }
+/* Add this CSS to your stylesheets */
+
+
 
 .testimonial-image {
   width: 300px;
@@ -380,6 +485,7 @@ a {
   border-radius: 50%;
   overflow: hidden;
   animation: diagonalBounce 2s infinite;
+  margin-left: 110px;
  
 }
 
@@ -433,26 +539,13 @@ a {
   opacity: 0.75;
 }
 
-/* .testimonial-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(208, 153, 15, 0.5);
-  z-index: 2;
-	overflow: hidden;
-} */
-
 .testimonial-overlay {
   position: absolute;
   width: 300px;
   height: 300px;
   border-radius: 50%;
   top: 0;
-  left: 0;
+  left: 110px;
   right: 0;
   bottom: 0;
   background-color: rgba(241, 199, 94, 0.5);
@@ -460,22 +553,6 @@ a {
 	overflow: hidden;
 }
 
-.button-container {
-  flex: 1; /* Take remaining space */
-  display: flex;
-  justify-content: flex-end; /* Align button to the right */
-  padding-right: 20px;
-}
-
-.button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-}
 /* circle */
 .content-container {
   display: flex;
@@ -711,8 +788,14 @@ a {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #f0f0f0;
+  background-image: url("../public/images/bg-bw.png"); /* Replace 'your-background-image.jpg' with your image URL */
+  background-repeat: repeat;
+  background-size: 800px;
+  padding: 20px;
+  min-height: 100vh; /* Ensure the container covers the viewport height */
+  flex-direction: column;
 }
+
 
 .faqContainer {
   background-color: #fff;
@@ -725,6 +808,7 @@ a {
   font-size: 24px;
   margin-bottom: 20px;
 }
+
 
 .faqColumns {
   display: flex;
@@ -748,7 +832,7 @@ a {
   align-items: center;
   width: 190px;
   height: 190px;
-   background-color: #ffcc00 /*#197eff*/;
+   background-color: #0B3D91 /*#197eff*/;
   border-radius: 50%;
   font-size: 18px;
   font-weight: bold;
@@ -760,8 +844,9 @@ a {
   line-height: 1.5;
 }
 
+
 .faqQuestionCircle:hover {
-  background-color: #ff9900;
+  background-color: #6EB5E5;
   transform: scale(1.1);
   animation: bounce 0.6s infinite alternate;
 }
@@ -794,6 +879,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: red;
 }
 
 .faqRow {
@@ -807,9 +893,39 @@ a {
 
 .faqRowTitle {
   font-size: 24px;
-  margin-bottom: 10px;
 
 }
+/* Add this CSS to your project */
+
+.brushed-title-container::before,
+.brushed-title-container::after {
+  content: "";
+  position: absolute;
+  width: 70px; /* Adjust the width of the brush stroke images */
+  height: 34px; /* Adjust the height of the brush stroke images */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.brushed-title-container::before {
+  left: -10px; /* Adjust the positioning of the left brush stroke */
+  top: 50%; /* Position it vertically in the middle */
+  background-image: url("../public/images/left-painting.png"); /* Replace with the actual path to your left brush stroke image */
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.brushed-title-container::after {   
+  right: -70px; /* Adjust the positioning of the right brush stroke */
+  top: 50%; /* Position it vertically in the middle */
+  background-image: url("../public/images/right-paintingg.png"); /* Replace with the actual path to your right brush stroke image */
+  transform: translateY(-50%); /* Center vertically */
+  width: 78px; /* Set the width to match the image width */
+  height: 34px;
+  z-index: -2;
+   /* Set the height to match the image height */
+}
+
 
 .faqCircles {
   display: flex;
@@ -975,7 +1091,7 @@ a {
 .price-list-container {
   background-image: url("../public/images/bg-bw.png"); /* Replace 'your-background-image.jpg' with your image URL */
   background-repeat: repeat;
-  background-size: 600px;
+  background-size: 800px;
   padding: 20px;
   width: 100%;
   min-height: 100vh; /* Ensure the container covers the viewport height */

@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Main from '../components/Main'
 import Cover from '../components/Cover'
+import Cover1 from '../components/Cover1'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Navbar>
       <Cover />
-      <Main />
+      <Cover1 />
       <Footer />
     </div>
   )

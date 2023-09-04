@@ -17,11 +17,11 @@ const Instructors = () => {
     return (
         <div className="testimonial-container">
             <div className="box">
-                <div className="tile">
+                
                     <div className="heading">
                         Naši instruktori
                     </div>
-                </div>       
+                      
             </div>
 
       
@@ -30,9 +30,6 @@ const Instructors = () => {
                 <div className="col-lg-6">
                     <div className="testimonial-image">
                          <img src={instruktor1.src}/> 
-                    </div>
-                    <div className="button-container">
-                        <button className="button">Learn More</button>
                     </div>
                     <div className="testimonial-overlay"></div>
                 </div>
@@ -64,7 +61,7 @@ const Instructors = () => {
                         </div>
                     </div>
                 </div>
-
+                
                 <div className="col-lg-6">
                     <div className="testimonial-image">
                          <img src={instruktor6.src}/>
