@@ -346,7 +346,6 @@ a {
   }
 }
  /* Style for the Cover1 Container */
-/* Add your existing CSS here */
 .cover-container {
   background-color: red; /* Light grey background color */
   padding: 20px;
@@ -432,7 +431,7 @@ h2.brush {
 }
 
 .cover-image:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
  /* Move 20px up and 20px to the left on hover */
 }
 
@@ -523,6 +522,7 @@ h2.brush {
   padding: 20px;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .cover2-content {
@@ -591,10 +591,13 @@ h2.brush {
 .icon-container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Add this to space icons evenly */
-  flex: 0.9;
+  justify-content: space-between;
+  width: 800px; /* Set the desired width */
+  margin: 0 auto; /* Center horizontally */
+  flex: 0.7;
   margin-top: 10px;
 }
+
 
 .icon {
   text-align: center;
@@ -605,7 +608,7 @@ h2.brush {
 }
 
 .icon:last-child {
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 /* Add white circle with a dotted border */
@@ -644,6 +647,94 @@ h2.brush {
 .icon p {
   font-size: 14px;
   text-align: center;
+}
+
+/* Cover3 */
+.cover3-container {
+  background-color: grey; /* Light grey background color */
+  padding: 20px;
+  width: 100%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the cover container */
+}
+.circle3-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Center vertically */
+  transition: transform 0.3s ease;
+  margin-bottom: 120px;
+}
+
+.circle3 {
+  width: 500px;
+  height: 500px;
+  background-color: #78bdec;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.rotating-image {
+  width: 100%;
+  height: auto;
+  animation: spin 150s linear infinite;
+  z-index: 20;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.icon3-container {
+color:red;
+z-index: 30;
+position: absolute; /* Position the icon-container relative to the image-container */
+  top: 90px; /* Adjust the top position as needed */
+  left: 70px;
+  
+  
+
+
+ /* Increase the space between icons */
+}
+
+.icon3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  /* Initial position */
+  transition: transform 0.3s ease; /* Smooth slide transition */
+}
+
+.icon3 img {
+  width: 64px;
+  height: 64px;
+  border-radius: 30%;
+  background-color: #fff;
+  
+  border-width: 300px;
+  
+}
+
+.icon3 p {
+  margin-left: 20px;
+  font-size: 32px;
+  color: #000;
+}
+
+.icon3:hover {
+  transform: translateX(50px); /* Slide icons to the right on hover */
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 
