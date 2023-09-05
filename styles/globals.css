@@ -572,11 +572,10 @@ h2.brush {
 }
 
 .cover2-text {
-  margin-top: 50px;
   margin-right: 20px;
   flex: 1;
   width: auto;
-  height: 60vh;
+  height: 30vh;
   display: flex;
   flex-direction: column; /* Align text vertically */
   justify-content: center; /* Center text vertically */
@@ -594,7 +593,7 @@ h2.brush {
   align-items: center;
   justify-content: space-between; /* Add this to space icons evenly */
   flex: 0.9;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .icon {
@@ -618,14 +617,14 @@ h2.brush {
   border: 2px dotted #3498db;
   border-radius: 50%;
   position: absolute;
-  top: 50%; /* Vertically center the circle */
+  top: 25%; /* Vertically center the circle */
   left: 50%; /* Horizontally center the circle */
   transform: translate(-50%, -50%);
   transition: background-color 0.3s ease;
 }
 
 .icon:hover::before {
-  background-color: orange;
+  background-color: rgb(115, 116, 117);
 }
 
 .icon img {
@@ -639,7 +638,7 @@ h2.brush {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .icon p {
