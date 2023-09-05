@@ -693,16 +693,10 @@ h2.brush {
 }
 
 .icon3-container {
-color:red;
 z-index: 30;
 position: absolute; /* Position the icon-container relative to the image-container */
   top: 90px; /* Adjust the top position as needed */
   left: 70px;
-  
-  
-
-
- /* Increase the space between icons */
 }
 
 .icon3 {
@@ -716,17 +710,16 @@ position: absolute; /* Position the icon-container relative to the image-contain
 .icon3 img {
   width: 64px;
   height: 64px;
-  border-radius: 30%;
+  border-radius: 40%;
   background-color: #fff;
-  
-  border-width: 300px;
-  
+  padding: 7px;
 }
 
 .icon3 p {
   margin-left: 20px;
   font-size: 32px;
   color: #000;
+  font-weight: 500;
 }
 
 .icon3:hover {
@@ -751,12 +744,13 @@ position: absolute; /* Position the icon-container relative to the image-contain
 /* Testimonials */
 
 .testimonial-container {
-
-  max-width: 1000px; /* Adjust the maximum width as per your preference */
-  margin: 0 auto;
   padding-bottom: 30px;
   margin-bottom: 60px;
   margin-top: 200px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
 }
 
 .testimonial-container .col-lg-6 {
@@ -769,16 +763,21 @@ position: absolute; /* Position the icon-container relative to the image-contain
 
 .testimonial-container > .tile > div {
   position: relative;
-  display: table;
+  
+  max-width: fit-content;
   margin-bottom: 40px;
   margin-top: 40px;
-  background-color: #fff;
   z-index: -2;
 }
-/* Add this CSS to your stylesheets */
 
+.testimonial-container .col-lg-12 {
+  padding: 0;
+  background-color: #0B3D91;
+  display: flex;
+  padding-right: 80px;
+  padding-bottom: 30px;
 
-
+}
 .testimonial-image {
   width: 300px;
   height: 300px;
@@ -852,6 +851,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
   z-index: -1;
 	overflow: hidden;
 }
+
 
 /* circle */
 .content-container {

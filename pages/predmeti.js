@@ -18,7 +18,6 @@ export default function Predmeti() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Main />
       <Footer />
     </div>
   )

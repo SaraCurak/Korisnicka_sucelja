@@ -38,23 +38,20 @@
   }
 }
 .tile {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically */
 }
+
 .tile > * {
-  box-sizing: border-box;
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-top: var(--bs-gutter-y);
+  flex: 0 0 auto;
+  margin: 0; /* Remove margin */
+  width: auto;
+  max-width: 100%; /* Ensure elements don't exceed the container width */
+  margin-top: 0; /* Remove margin-top */
 }
+
 
 .col {
   flex: 1 0 0%;

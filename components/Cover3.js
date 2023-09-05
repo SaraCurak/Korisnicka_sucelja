@@ -3,10 +3,10 @@ import girl from '../public/images/girl.png'
 import girlb from '../public/images/girl-back.png'
 import curvy from '../public/images/curvy-bottom.png'
 import pattern from '../public/images/pattern.png'
-import icon1 from '../public/images/icon1.png';
-import icon2 from '../public/images/icon2.png';
-import icon3 from '../public/images/icon3.png';
-import icon4 from '../public/images/icon4.png';
+import icon1 from '../public/images/icon-box-1.png';
+import icon2 from '../public/images/icon-box-2.png';
+import icon3 from '../public/images/icon-box-3.png';
+import icon4 from '../public/images/icon-box-4.png';
 
 const Cover3 = () => {
   return (

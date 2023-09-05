@@ -26,27 +26,27 @@ const Instructors = () => {
 
       
             <div className="tile">
-
-                <div className="col-lg-6">
-                    <div className="testimonial-image">
-                         <img src={instruktor1.src}/> 
+                
+                    <div className="col-lg-6">
+                        <div className="testimonial-image">
+                            <img src={instruktor1.src}/> 
+                        </div>
+                        <div className="testimonial-overlay"></div>
                     </div>
-                    <div className="testimonial-overlay"></div>
-                </div>
 
-                <div className="col-lg-6">
-                    <div className="testimonial-content testimonial-content-right">
-                        <div className="testimonial-name">
-                            Lana Matić
-                        </div>
-                        <div className="testimonial-position">
-                            Matematika
-                        </div>
-                        <div className="testimonial-quote">
-                            "Pozdrav svima! Ja sam Lana, student matematike koji voli rješavati zagonetke. Osim matematičkih izazova, bavim se i fotografijom i dizajnom. Kroz svoj rad u centru za poduke, želim potaknuti kreativnost učenika i pokazati im da matematika nije samo brojevi, već i igra uma."
+                    <div className="col-lg-6">
+                        <div className="testimonial-content testimonial-content-right">
+                            <div className="testimonial-name">
+                                Lana Matić
+                            </div>
+                            <div className="testimonial-position">
+                                Matematika
+                            </div>
+                            <div className="testimonial-quote">
+                                "Pozdrav svima! Ja sam Lana, student matematike koji voli rješavati zagonetke. Osim matematičkih izazova, bavim se i fotografijom i dizajnom. Kroz svoj rad u centru za poduke, želim potaknuti kreativnost učenika i pokazati im da matematika nije samo brojevi, već i igra uma."
+                            </div>
                         </div>
                     </div>
-                </div>
 
                 <div className="col-lg-6">
                     <div className="testimonial-content testimonial-content-left">
