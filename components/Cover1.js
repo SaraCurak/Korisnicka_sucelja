@@ -8,7 +8,7 @@ const Cover1 = () => {
   return (
     <div className="cover1-container">
       <div className="box">
-        <div className="brushed-title-container-cover">
+        <div className="brushed-title-container-cover1">
           <h2 className="brush">Instrukcije 1 na 1</h2>
         </div>
         <div className="cover-content">

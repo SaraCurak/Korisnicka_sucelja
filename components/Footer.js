@@ -17,9 +17,9 @@ const Footer = () => {
             <div className="footer-menu">
                 <div className="footer-menu-left">
                     <div className="footer-menu-container">
-                        <span><a href="#"> home </a></span>
-                        <span><a href="#"> shop  </a></span>
-                        <span><a href="#"> account </a></span>
+                        <span><a href="#"> prijava </a></span>
+                        <span><a href="#"> instruktori  </a></span>
+                        <span><a href="#"> uputstva </a></span>
                     </div>
                 </div>
                 <div className="footer-logo">
@@ -30,25 +30,13 @@ const Footer = () => {
                 <div className="footer-menu-right">
                     <div className="footer-menu-container">
                         <span><a href="#"> faq </a></span>
-                        <span><a href="#"> privacy policy </a></span>
-                        <span><a href="#"> terms & conditions </a></span>
+                        <span><a href="#"> cjenik </a></span>
+                        <span><a href="#"> kontakt </a></span>
                     </div>
                 </div>
             </div>
             <hr/>
             <div className="footer-bottom">
-                <div className="footer-social">
-                    <div className="footer-social-item">
-                        <a href="#">
-                            <img src={facebook}/>
-                        </a>
-                    </div>   
-                    <div className="footer-social-item">
-                        <a href="#">
-                            <img src={instagram}/>
-                        </a>
-                    </div>   
-                </div>
                 <div className="footer-copyright">
                     &copy; inSTrukcije 2023
                 </div>

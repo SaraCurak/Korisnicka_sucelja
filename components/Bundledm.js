@@ -1,24 +1,13 @@
 import React from 'react';
 import iconbox3 from '../public/images/icon-box-3.png'
 
-function Bundle() {
+function Bundledm() {
   return (
-
-    <div>
-      
-    <div className="testimonials-row2">
-        <div className="testimonial-container">
-            <div className="brushed-title-container-cover">
-                <h2 className="brushi">Cjenik</h2>
-            </div>
-        </div>
-    </div>
-
     <div className="backgroundp">
       <div className="containerp">
         <div className="panel pricing-table">
           <PricingPlan
-            header="OSNOVNA i SREDNJA ŠKOLA"
+            header="Državna matura"
             features={[
               'Personalizirana nastava',
               'Odabir instruktora po želji',
@@ -29,7 +18,7 @@ function Bundle() {
         </div>
         
       </div>
-    </div></div>
+    </div>
   );
 }
 
@@ -55,4 +44,4 @@ function PricingPlan({ imgSrc, header, features, price, price2, isFeatured }) {
   );
 }
 
-export default Bundle;
+export default Bundledm;

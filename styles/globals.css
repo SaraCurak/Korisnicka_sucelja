@@ -21,7 +21,7 @@ a {
   height: 60px;
   width: 100%;
   color: var(--primary-color);
-  background-color: #197eff;
+  background-color: #4f5884;
   color: white;
   overflow: hidden;
 }
@@ -47,12 +47,6 @@ a {
   margin-right: 10px;
   float: left;
 } 
-
-/* Button styles  #3498DB;
-  color: #85C1E9;
-  color: #FFA500;
-  color: #FFD700;
-  color: #FF5733;*/
 
 .button-full {
   width: 130px;
@@ -133,33 +127,61 @@ a {
 .underline-text.clicked::after {
   transform: scaleX(1); /* Scale the underline to show it on click */
 }
-
-/*foooter*/
-
-/* .footer {
+ /* navbar2 */
+ .nav-hero {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  position: relative;
+  margin-top: 60px;
+  background-image: url(../public/images/color-mono.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-size:contain;
+  height: 20vh;
+}
+
+.nav-hero::after {
+  content: "";
+  width: 100%;
+  height: 70px;
+  background: url(../public/images/bottom-pattern.png) repeat-x;
+  z-index: 3;
+}
+ /* footer2 */
+ .footer-hero {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  background-image: url(../public/images/color-mono.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: contain;
+  height: 20vh;
+}
+
+.footer-hero::before {
+  content: "";
+  width: 100%;
+  height: 70px;
+  background: url(../public/images/bottom-pattern-flip.png) repeat-x;
+  position: absolute;
+  top: 0; /* Place it at the top of .footer-hero */
+  z-index: 2; /* Ensure it's above .footer-hero */
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
   height: auto;
   color: var(--primary-color);
-  background-color: white;
+  background-color: #4f5884;
   float: left;
-} 
-.footer {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-}*/
-.footer {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 70px;
-  height: auto;
-  color: var(--primary-color);
-  background-color: #333333;
-  float: left;
-} 
+}
 
 .footer hr {
   opacity: 0.5;
@@ -167,109 +189,78 @@ a {
 }
 
 .footer-upper-hr {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .footer-menu {
   width: 100%;
-  height: 100px;
+  height: 80px; /* Reduced height */
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
-.footer-menu-left, .footer-menu-right {
+.footer-menu-left,
+.footer-menu-right {
   height: 100%;
   list-style-type: none;
-  flex: 1;
 }
 
-.footer-menu-left span, .footer-menu-right span {
+.footer-menu-left span,
+.footer-menu-right span {
   display: inline-block;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .footer-menu-left {
-  display: block;
-  float: left;
-  justify-content: flex-start;
-  padding-left: 60px;
+  padding-left: 20px;
+  color: white;
 }
 
 .footer-menu-right {
-  display: block;
-  padding-right: 60px;
+  padding-right: 20px;
 }
 
 .footer-menu-right .footer-menu-container {
   width: fit-content;
-  float: right;
+  color: white;
 }
 
 .footer-logo {
+  display: flex;
   justify-content: center;
-  margin: 0 auto;
-  flex-basis: auto;
+  align-items: center;
+  text-align: center; /* Add text-align for centering text */
 }
+
 
 .footer-logo img {
   height: 32px;
   width: auto;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .footer-bottom {
-  width: auto;
-  margin: 0 auto;
-  padding-top: 20px;
+  text-align: center;
+  padding-top: 10px;
 }
-
-.footer-social {
-  display: table;
-  height: 50px;
-  margin: 0 auto;
-}
-
-.footer-social-item {
-  width: 42px;
-  height: 42px;
-  float: left;
-}
-
-.footer-social-item img {
-  width: 100%;
-  height: 100%;
-}
-
 .footer-copyright {
   text-align: center;
-  color: black;
+  color: white;
   opacity: 0.5;
-  padding-top: 20px;
+  padding-top: 10px;
 }
+
 
 /*naslovnica*/
-
-/* .home-hero {
-  width: 100%;
-  height: 80vh;
-  background-color:#3498DB;
-  position:relative;
-}
-.home-hero::after {
-  position:absolute;
-  bottom: 100px;
-  left: 0;
-  max-width: 100%;
-  height: auto;
-  background-image:'paper2.png'; 
-  background-size:200%;
-} */
 
 .home-hero {
   width: 100%;
   position: relative;
   margin-top: 60px;
-  background: url(../public/images/pozadina.jpg);
+  background: url(../public/images/bg1.jpeg);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -347,17 +338,26 @@ a {
 }
  /* Style for the Cover1 Container */
  .cover1-container {
-  background-color: red; /* Light grey background color */
+  background-color: white; /* Light grey background color */
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   /* Center the cover container */
 }
-
+.cover1-container::before {
+  content: "";
+  background: url(../public/images/girl-back.png);
+  position: absolute;
+  top: 0px; /* Position it at the bottom */
+  right: 60px; /* Position it at the right */
+  width: 300px; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+  z-index: 2; /* Set the z-index as needed (less than ::after's z-index) */
+}
 .cover1-container::after {
   content: "";
-  background: url(../public/images/curvy-bottom.png);
+  background: url(../public/images/curvy-v2.png);
   position: absolute;
   bottom: 0; /* Position it at the bottom */
   right: -16px; /* Position it at the right */
@@ -367,54 +367,11 @@ a {
 }
 
 
-/* Add this CSS for the curved top image */
-
-
 .cover-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-h2.brush {
-  margin: 50px 20px 20px 0;
-  font-size: 24px;
-  text-align: center;
-  color: #000;
-  background-color: #272f55;
-  position: relative;
-  z-index: 0;
-  padding-bottom: 2px;/* VAMO MINJAT ZA TITLE VELICINU */
-  display: inline-block; 
-}
-
-.brushed-title-container-cover::before,
-.brushed-title-container-cover::after {
-  content: "";
-  position: absolute;
-  width: 100px; /* Increase the width of the brush stroke images */
-  height: 50px; /* Increase the height of the brush stroke images */
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.brushed-title-container-cover::before {
-  left: -20px; /* Adjust the positioning of the left brush stroke */
-  top: 50%; /* Position it vertically in the middle */
-  background-image: url("../public/images/left-painting.png"); /* Replace with the actual path to your left brush stroke image */
-  transform: translateY(-50%);
-  z-index: -1;
-}
-
-.brushed-title-container-cover::after {
-  right: -100px; /* Adjust the positioning of the right brush stroke */
-  top: 50%; /* Position it vertically in the middle */
-  background-image: url("../public/images/right-paintingg.png"); /* Replace with the actual path to your right brush stroke image */
-  transform: translateY(-50%); /* Center vertically */
-  width: 110px; /* Set the width to match the image width */
-  height: 50px; /* Set the height to match the image height */
-  z-index: -2;
-}
-
 .cover-text {
   
   flex: 3;
@@ -457,12 +414,12 @@ img {
   align-items: center;
 } */
 
-h2.brush {
+/* h2.brush {
   margin: 50px 20px 20px 0;
   font-size: 24px;
   text-align: center;
   color: #000;
-  background-color: #fff;
+  background-color: red;
   position: relative;
   z-index: 0;
   padding-bottom: 2px;
@@ -482,7 +439,7 @@ h2.brush {
 .brushed-title-container-cover::before {
   left: -20px;
   top: 50%;
-  background-image: url("../public/images/left-painting.png");
+  background-image: url("../public/images/left-paintingg.png");
   transform: translateY(-50%);
   z-index: -1;
 }
@@ -495,7 +452,7 @@ h2.brush {
   width: 110px;
   height: 50px;
   z-index: -2;
-}
+} */
 
 /* .cover2-text {
   margin-top: 50px;
@@ -509,7 +466,7 @@ h2.brush {
 /* Cover2 */
 /* Cover2 */
 .cover2-container {
-  background-color: #272f55; /* Light grey background color */
+  background-color: #6f90af; /* Light grey background color */
   padding: 20px;
   width: 100%; /* Adjust width as needed */
   margin: 0 auto;
@@ -523,12 +480,12 @@ h2.brush {
   align-items: center;
 }
 
-h2.brush {
+/* h2.brush {
   margin: 50px 20px 20px 0;
   font-size: 24px;
   text-align: center;
-  color: #000;
-  background-color: #fff;
+  color: black;
+  background-color: #6f90af;
   position: relative;
   z-index: 0;
   padding-bottom: 2px;
@@ -548,7 +505,7 @@ h2.brush {
 .brushed-title-container-cover::before {
   left: -20px;
   top: 50%;
-  background-image: url("../public/images/left-painting.png");
+  background-image: url("../public/images/left-paintingb.png");
   transform: translateY(-50%);
   z-index: -1;
 }
@@ -556,12 +513,12 @@ h2.brush {
 .brushed-title-container-cover::after {
   right: -100px;
   top: 50%;
-  background-image: url("../public/images/right-paintingg.png");
+  background-image: url("../public/images/right-paintinggb.png");
   transform: translateY(-50%);
   width: 110px;
   height: 50px;
   z-index: -2;
-}
+} */
 
 .cover2-text {
   margin-right: 20px;
@@ -660,7 +617,7 @@ h2.brush {
 .circle3 {
   width: 500px;
   height: 500px;
-  background-color: #78bdec;
+  background-color: #a7d6f4;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -736,26 +693,43 @@ position: absolute; /* Position the icon-container relative to the image-contain
 }
 
 /* Testimonials */
-
 .testimonial-container {
 
-  max-width: 1000px; /* Adjust the maximum width as per your preference */
+  max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
 
 }
-.instructors-container{
-  background-color: red;
+
+.testimonial-container::after {
+  background-image: url(../public/images/arrow.png);
+  background-repeat: no-repeat;
+}
+
+.testimonial-containeru {
+
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
 
 }
-.instructors-container .col-lg-6{
-  z-index: 5;
-  
-}
-.testimonials-row{
+
+.testimonials-row {
   background-image: url("../public/images/bg-bw.png");
-  background-size: cover;
+  background-size: 800px;
 }
+
+.testimonials-row2 {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .testimonial-container .col-lg-6 {
   padding: 0;
 }
@@ -771,9 +745,6 @@ position: absolute; /* Position the icon-container relative to the image-contain
   margin-top: 40px;
   background-color: #fff;
 }
-/* Add this CSS to your stylesheets */
-
-
 
 .testimonial-image {
   width: 300px;
@@ -782,7 +753,18 @@ position: absolute; /* Position the icon-container relative to the image-contain
   overflow: hidden;
   animation: diagonalBounce 2s infinite;
   margin-left: 110px;
- 
+  position: relative;
+  z-index: 1; /* Set a higher z-index */
+}
+
+.testimonial-images {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 110px;
+  position: relative;
+  z-index: 1; /* Set a higher z-index */
 }
 
 .testimonial-image img {
@@ -794,7 +776,8 @@ position: absolute; /* Position the icon-container relative to the image-contain
   align-items: center;
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
-  position:absolute;
+  position: absolute;
+  z-index: 2; /* Set a higher z-index */
 }
 
 .testimonial-content {
@@ -811,12 +794,24 @@ position: absolute; /* Position the icon-container relative to the image-contain
   text-align: right;
   padding-right: 64px;
   padding-left: 120px;
+  position: relative; /* Add relative positioning */
+  z-index: 2; /* Set a higher z-index */
+}
+
+.testimonials-content-right {
+  text-align: left;
+  padding-right: 64px;
+  padding-left: 120px;
+  position: relative; /* Add relative positioning */
+  z-index: 2; /* Set a higher z-index */
 }
 
 .testimonial-content-left {
   text-align: left;
   padding-right: 120px;
   padding-left: 64px;
+  position: relative; /* Add relative positioning */
+  z-index: 2; /* Set a higher z-index */
 }
 
 .testimonial-name {
@@ -827,7 +822,6 @@ position: absolute; /* Position the icon-container relative to the image-contain
 .testimonial-position {
   color: #ababab;
   font-size: 16px;
-
 }
 
 .testimonial-quote {
@@ -844,58 +838,45 @@ position: absolute; /* Position the icon-container relative to the image-contain
   left: 110px;
   right: 0;
   bottom: 0;
-  background-color: rgba(241, 199, 94, 0.5);
-  z-index: -1;
-	overflow: hidden;
+  background-color: rgba(39, 67, 102, 0.669);
+  z-index: 0; /* Set a lower z-index to place it under the image */
+  overflow: hidden;
 }
 
-/* circle */
-.content-container {
+
+/* steps */
+.content-container2 {
   display: flex;
   flex-direction: column;
-  align-items: normal;
-  margin-left: 200px;
-  margin-top: 200px;
+  align-items: center;
   height: fit-content;
-  width: 70%;
+  width: 100%;
+  position: relative; 
 }
 
-/* Add these styles at the end of your existing CSS */
-
-/* Update your existing CSS */
-
-.row::before {
-  content: '';
-  width: 130px; /* Adjust arrow width as needed */
-  height: 80px; /* Adjust arrow height as needed */
+.content-container2::before,
+.content-container2::after {
+  content: "";
   background-repeat: no-repeat;
-  background-size: contain;
-  
   position: absolute;
-  
-  transform: translateY(-50%);
-  
-  margin-bottom: 50px; /* Hide arrows by default */
+  width: 300px; 
+  height: 500px; 
+  z-index: 2;
+  animation: slide 2s infinite;
 }
 
-.row:nth-child(1)::before {
-  background-image: url('../public/images/top-arrow.png'); /* Adjust the path to your arrow image */
-  margin-left: 550px;/* Adjust arrow position as needed */
-  display: block;top: 35%; /* Show arrow */
+.content-container2::before {
+  background: url(../public/images/top-arrow.png);
+  background-repeat: no-repeat;
+  top: calc(50% - 250px); 
+  right: 50px; 
 }
 
-
-.row:nth-child(2)::after {
-  background-image: url('../public/images/top-arrow.png'); /* Adjust the path to your arrow image */
-  right: -50px; /* Adjust arrow position as needed */
-  display: block; /* Show arrow */
-}
-
-/* Rest of your existing CSS... */
-
-
-/* Rest of your existing CSS... */
-
+.content-container2::after {
+  background: url(../public/images/down-arrow.png);
+  background-repeat: no-repeat;
+  top: calc(50% + 100px); 
+  right: 50px; }
 
 .row:nth-child(1) .element-set .circle {
   animation: diagonalBounce 2s infinite;
@@ -909,7 +890,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
 
 .row:nth-child(2) .element-set .circle {
   position: absolute;
-  right: -50px; /* Adjust this value as needed */
+  right: -50px; 
   animation: slide 2s linear infinite;
 }
 
@@ -927,7 +908,14 @@ position: absolute; /* Position the icon-container relative to the image-contain
 .circle-container {
   display: flex;
   height: fit-content;
-  width: 50vh;
+  width: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+.circle-container-right {
+  display: flex;
+  height: fit-content;
+  width: 30vh;
   justify-content: center;
   align-items: center;
 }
@@ -936,19 +924,22 @@ position: absolute; /* Position the icon-container relative to the image-contain
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #3498db;
+  background-color: #4f5884;
   color: white;
   font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: transform 0.5s ease-in-out;
   position: relative;
-  animation: bounce 2s infinite;
+  position: absolute; 
+  top: 20%; 
+  left: 20%; 
+  transform: translate(-50%, -50%); 
+  z-index: 2;
+  animation: slide 2s infinite;
 }
 
-/* Rest of your CSS... */
 
 @keyframes bounce {
   0%, 100% {
@@ -998,130 +989,18 @@ position: absolute; /* Position the icon-container relative to the image-contain
 }
 
 
-
-/* FAQ */
-/* .hero-image-container {
-  width: 100%;
-  height: 60vh;
-}
-
-.about-us-hero-image-container {
-  height: 50vh;
-}
-
-.faq-hero-image-container {
-}
-
-.faq-hero-image-container img {
-  top: -160vh;
-}
-
-.id-accordion .id-accordion-item {
-  border-bottom: 1px solid #29a0ee;
-}
-.id-accordion .id-accordion-item button[aria-expanded='true'] {
-  border-bottom: 1px solid #333333;
-}
-.id-accordion button {
-  position: relative;
-  display: block;
-  text-align: left;
-  width: 100%;
-  padding: 1em 0;
-  color: #7288a2;
-  font-size: 1.15rem;
-  font-weight: 400;
-  border: none;
-  background: none;
-  outline: none;
-}
-.id-accordion button:hover, .id-accordion button:focus {
-  cursor: pointer;
-  color: #333333;
-}
-.id-accordion button:hover::after, .id-accordion button:focus::after {
-  cursor: pointer;
-  color: #333333;
-  border: 1px solid #333333;
-}
-.id-accordion button .id-accordion-title {
-  padding: 1em 1.5em 1em 0;
-}
-.id-accordion button .icon {
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  right: 0;
-  width: 22px;
-  height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
-}
-.id-accordion button .icon::before {
-  display: block;
-  position: absolute;
-  content: '';
-  top: 9px;
-  left: 5px;
-  width: 10px;
-  height: 2px;
-  background: currentColor;
-}
-.id-accordion button .icon::after {
-  display: block;
-  position: absolute;
-  content: '';
-  top: 5px;
-  left: 9px;
-  width: 2px;
-  height: 10px;
-  background: currentColor;
-}
-.id-accordion button[aria-expanded='true'] {
-  color: #333333;
-}
-.id-accordion button[aria-expanded='true'] .icon::after {
-  width: 0;
-}
-.id-accordion button[aria-expanded='true'] + .id-accordion-content {
-  opacity: 1;
-  max-height: 9em;
-  transition: all 200ms linear;
-  will-change: opacity, max-height;
-}
-.id-accordion .id-accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 200ms linear, max-height 200ms linear;
-  will-change: opacity, max-height;
-}
-.id-accordion .id-accordion-content p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin: 2em 0;
-}
-
-#id-faq {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.id-accordion-content div {
-  padding: 20px;
-} */
-/* Reset some default styles */
+/* faq */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  background-image: url("../public/images/bg-bw.png"); /* Replace 'your-background-image.jpg' with your image URL */
+  background-image: url("../public/images/bg-bw.png"); 
   background-repeat: repeat;
   background-size: 800px;
   padding: 20px;
-  min-height: 100vh; /* Ensure the container covers the viewport height */
+  min-height: 100vh;
   flex-direction: column;
 }
 
@@ -1239,7 +1118,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
 .brushed-title-container::before {
   left: -10px; /* Adjust the positioning of the left brush stroke */
   top: 50%; /* Position it vertically in the middle */
-  background-image: url("../public/images/left-painting.png"); /* Replace with the actual path to your left brush stroke image */
+  background-image: url("../public/images/left-paintingg.png"); /* Replace with the actual path to your left brush stroke image */
   transform: translateY(-50%);
   z-index: -1;
 }
@@ -1418,9 +1297,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
 /* PriceList.css */
 
 .price-list-container {
-  background-image: url("../public/images/bg-bw.png"); /* Replace 'your-background-image.jpg' with your image URL */
-  background-repeat: repeat;
-  background-size: 800px;
+
   padding: 20px;
   width: 100%;
   min-height: 100vh; /* Ensure the container covers the viewport height */
@@ -1435,7 +1312,7 @@ h2 {
   font-size: 24px;
   text-align: center; /* Center align the text */
   color: #000;
-  background-color: #fff;
+  background-color: red;
   position: relative;
   z-index: 0;
   padding-bottom: 2px; /* Set position to relative for pseudo-elements */
@@ -1455,18 +1332,44 @@ h2 {
   left: -10px;
   top: 0;
   z-index: -1;
-  background-image: url("../public/images/left-painting.png");
+  background-image: url("../public/images/left-paintingb.png");
 }
 
 .brush::after {
   right: -70px;
   top: 0;
-  background-image: url("../public/images/right-paintingg.png");
+  background-image: url("../public/images/right-paintinggb.png");
   width: 78px; /* Adjust the width to match the image width */
   height: 34px;
   z-index: -2; /* Adjust the height to match the image height */
 }
 
+
+.brushw::before,
+.brushw::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.brushw::before {
+  left: -10px;
+  top: 0;
+  z-index: -1;
+  background-image: url("../public/images/left-painting.png");
+}
+
+.brushw::after {
+  right: -70px;
+  top: 0;
+  background-image: url("../public/images/right-paintinggg.png");
+  width: 78px; /* Adjust the width to match the image width */
+  height: 34px;
+  z-index: -2; /* Adjust the height to match the image height */
+}
 .price-items {
   display: flex;
   justify-content:center; /* Place items side by side */
@@ -1570,11 +1473,53 @@ h2 {
   height: 100%;
 }
 
-h2 {
+h2.brush {
   margin: 0 0 10px 0; /* Add space below title */
-  font-size: 24px; /* Increase font size */
+  font-size: 24px;
+  background-color: #6f90af; /* Increase font size */
+  width: fit-content;
+}
+h2.brushw {
+  margin: 0 0 10px 0; /* Add space below title */
+  font-size: 24px;
+  background-color: white; /* Increase font size */
+  width: fit-content;
 }
 
+
+h2.brushi {
+  margin: 40px 40px 40px 0; /* Add space below title */
+  font-size: 36px;
+  background-color: #6f90af; /* Increase font size */
+  width: fit-content;
+  justify-content: center;
+}
+
+.brushi::before,
+.brushi::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.brushi::before {
+  left: -10px;
+  top: 0;
+  z-index: -1;
+  background-image: url("../public/images/left-paintingb.png");
+}
+
+.brushi::after {
+  right: -70px;
+  top: 0;
+  background-image: url("../public/images/right-paintinggb.png");
+  width: 108px; /* Adjust the width to match the image width */
+  height: 200px;
+  z-index: -2; /* Adjust the height to match the image height */
+}
 p {
   margin: 0 0 10px 0; /* Add space below paragraph */
   font-size: 16px; /* Reduce font size */
@@ -1656,38 +1601,8 @@ p {
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
-/* The ribbon */
 
-.ribbon{
-	width:100px;
-	height:150px;
-	background-color:#fff;
-	position:absolute;
-	right:100px;
-	top:-350px;
-}
-.ribbon::before{
-		content: '';
-		position: absolute;
-		z-index: 2;
-		left: 0;
-		bottom: -50px;
-		border-left: 50px solid #fff;
-		border-right: 50px solid #fff;
-		border-bottom: 50px solid transparent;
-	}
-.ribbon::after{
-		content:'';
-		width:200px;
-		height:270px;
-		position: absolute;
-		z-index: -1;
-		left: 0;
-		bottom:-120px;
-		background-color:#507abd;
-		transform:skewY(35deg) skewX(0);
-	}
-  .backgroundp {
+.backgroundp {
     padding: 0 25px 25px;
     position: relative;
     width: 100%;
@@ -1695,10 +1610,10 @@ p {
   
   .backgroundp::after {
     content: '';
-    background: #60a9ff;
-    background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
-    background: -webkit-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
-    background: linear-gradient(to bottom, #60a9ff 0%, #4394f4 100%);
+    background: #4f5884;
+    background: -moz-linear-gradient(top, #60a9ff 0%, #4f5884 100%);
+    background: -webkit-linear-gradient(top, #60a9ff 0%, #4f5884 100%);
+    background: linear-gradient(to bottom, #60a9ff 0%, #4f5884 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(
       startColorstr='#60a9ff',
       endColorstr='#4394f4',
@@ -1723,6 +1638,10 @@ p {
     padding: 50px 0 0;
     max-width: 960px;
     width: 100%;
+    display: flex; /* Use flexbox for centering vertically and horizontally */
+ /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;;
   }
   
   .panel {
@@ -1733,6 +1652,7 @@ p {
     width: 100%;
     z-index: 10;
     margin-top: 40px;
+    
   }
   
   .pricing-table {
@@ -1740,7 +1660,14 @@ p {
       0px 20px 31px 3px rgba(0, 0, 0, 0.09),
       0px 8px 20px 7px rgba(0, 0, 0, 0.02);
     display: flex;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
     flex-direction: column;
+    
+    
+     /* Center both horizontally and vertically */
+    
   }
   
   @media (min-width: 900px) {
@@ -1793,10 +1720,11 @@ p {
   }
   
   .pricing-features {
-    color: #016FF9;
+    color: black;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 50px 0 25px;
+
   }
   
   .pricing-features-item {
@@ -1811,10 +1739,10 @@ p {
   }
   
   .pricing-price {
-    color: #016FF9;
+    color: #000;
     display: block;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 400;
   }
   
   .pricing-button {
@@ -1827,7 +1755,7 @@ p {
     text-decoration: none;
     transition: all 150ms ease-in-out;
   }
-  
+
   .pricing-button:hover,
   .pricing-button:focus {
     background-color: #e1f1ff;
@@ -1843,3 +1771,9 @@ p {
     background-color: #269aff;
   }
   
+  h2 {
+    margin: 0 0 10px 0; /* Add space below title */
+    font-size: 24px;
+    background-color: #fff; /* Increase font size */
+    width: fit-content;
+  }

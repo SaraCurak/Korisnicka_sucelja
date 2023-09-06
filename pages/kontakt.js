@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faMapMarkerAlt, faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Navbar from '@/components/Navbar';
+import Navbar2 from '@/components/Navbar2';
 import Footer from '@/components/Footer';
 import React, { useState } from 'react';
 
@@ -14,8 +15,9 @@ const ContactPage = () => {
 
   return (
     <div>
-      <div className="contact-container">
+      
         <Navbar />
+        <Navbar2 /><div className="testimonial-container">
         <h2 className="contact-main-title">Kontaktirajte nas</h2>
         
         <div className="contact-row">
@@ -38,29 +40,6 @@ const ContactPage = () => {
             <FontAwesomeIcon className="contact-icon" icon={faEnvelope} />
             <h3 className="contact-title">Email</h3>
             <p className="contact-text">info@example.com</p>
-          </div>
-        </div>
-
-        <div className="contact-row">
-          {/* Instagram */}
-          <div className="contact-item">
-            <FontAwesomeIcon className="contact-icon" icon={faInstagram} />
-            <h3 className="contact-title">Instagram</h3>
-            <p className="contact-text">@your_instagram</p>
-          </div>
-
-          {/* WhatsApp */}
-          <div className="contact-item">
-            <FontAwesomeIcon className="contact-icon" icon={faWhatsapp} />
-            <h3 className="contact-title">WhatsApp</h3>
-            <p className="contact-text">+1234567890</p>
-          </div>
-
-          {/* Facebook */}
-          <div className="contact-item">
-            <FontAwesomeIcon className="contact-icon" icon={faFacebook} />
-            <h3 className="contact-title">Facebook</h3>
-            <p className="contact-text">facebook.com/your_page</p>
           </div>
         </div>
 

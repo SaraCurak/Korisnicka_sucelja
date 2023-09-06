@@ -3,6 +3,7 @@ import { useState } from 'react'; // Import the useState hook
 import Navbar from '../components/Navbar'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
+import Navbar2 from '@/components/Navbar2';
 const entriesList = [
   {
     question: "Kako izvršiti plaćanje?",
@@ -72,8 +73,9 @@ export default function FAQ() {
   return (
       <div>
         <Navbar />
+        <Navbar2 />
           <div className="container">
-          <div className="faqContainer">
+          <div className="testimonial-container">
             <h1 className="faqTitle">Često postavljana pitanja</h1>
             <div className="faqRows">
               {rows.map((row, rowIndex) => (

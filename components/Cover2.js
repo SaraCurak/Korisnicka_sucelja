@@ -9,7 +9,7 @@ const Cover2 = () => {
     
     <div className="cover2-container"><div className="box">
       <div className="brushed-title-container-cover">
-        <h2 className="brush">Instrukcije 1 na 1</h2>
+        <h2 className="brushw">Instrukcije 1 na 1</h2>
       </div>
       <div className="cover2-text">
         <p>

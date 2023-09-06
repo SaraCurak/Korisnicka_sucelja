@@ -2,6 +2,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
 import Footer from '../components/Footer'
+import Footer2 from '../components/Footer2'
 import Navbar from '../components/Navbar'
 import Main from '../components/Main'
 import Cover from '../components/Cover'
@@ -24,6 +25,7 @@ export default function Home() {
       <Cover1 />
       <Cover2 />
       <Cover3 />
+      <Footer2 />
       <Footer />
     </div>
   )

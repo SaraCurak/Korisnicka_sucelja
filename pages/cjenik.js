@@ -4,7 +4,9 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
 import Navbar from '../components/Navbar'
+import Navbar2 from '../components/Navbar2'
 import Footer from '@/components/Footer'
+import Footer2 from '@/components/Footer2'
 import PriceList from '@/components/PriceList'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +19,9 @@ export default function Cjenik() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Navbar2 />
       <PriceList />
+      <Footer2 />
       <Footer />
     </div>
   )
