@@ -15,7 +15,7 @@ const Pricelist = () => {
             <div className="vertical-line"></div>
           </div>
           <div className="col-lg-6 offset-sm-1 middle-side">
-            <h2>Matematika- Ključ za uspjeh u školi i životu</h2>
+            <h2>Matematika - Ključ za uspjeh u školi i životu</h2>
             <p>
               <strong>Postani pravi šampion!</strong> 
             </p>
