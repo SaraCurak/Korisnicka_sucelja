@@ -3,6 +3,7 @@ import { useState } from 'react'; // Import the useState hook
 import Navbar from '../components/Navbar'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
+import Footer2 from '../components/Footer2'
 import Navbar2 from '@/components/Navbar2';
 const entriesList = [
   {
@@ -74,9 +75,16 @@ export default function FAQ() {
       <div>
         <Navbar />
         <Navbar2 />
+        <div>
+            <div className="testimonials-row2">
+                <div className="testimonial-container">
+                    <div className="brushed-title-container-cover">
+                        <h2 className="brushi">Često postavljana pitanja</h2>
+                    </div>
+                </div>
+            </div>
           <div className="container">
           <div className="testimonial-container">
-            <h1 className="faqTitle">Često postavljana pitanja</h1>
             <div className="faqRows">
               {rows.map((row, rowIndex) => (
                 <div key={rowIndex} className="faqRow">
@@ -105,9 +113,9 @@ export default function FAQ() {
                 </div>
               ))}
             </div>
-            <div className="zigzag"></div>
           </div>
-          </div>
+          </div></div>
+          <Footer2 />
           <Footer />
         </div>
   );

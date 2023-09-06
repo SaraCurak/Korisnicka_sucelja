@@ -1,7 +1,11 @@
 import React from 'react';
+import icon1 from '../public/images/math.jpg'
+import icon2 from '../public/images/psy.jpg'
+import icon3 from '../public/images/chem.png'
 
 const Pricelist = () => {
-  return (
+  return (<div>
+
   <div class="price-list-container">
 
       <div className="box">
@@ -11,22 +15,22 @@ const Pricelist = () => {
             <div className="vertical-line"></div>
           </div>
           <div className="col-lg-6 offset-sm-1 middle-side">
-            <h2>"Matematika- Ključ za Uspjeh u Školi i Životu</h2>
+            <h2>Matematika- Ključ za uspjeh u školi i životu</h2>
             <p>
               <strong>Postani pravi šampion!</strong> 
             </p>
             <p>
-              S našim Šampion Paketom, dobit ćeš jedan sat privatnih instrukcija svaki tjedan. To znači da ćeš svaki tjedan imati priliku povećati svoje znanje i vještine.
+            Nudimo instrukcije iz matematike prilagođene svim razinama obrazovanja, od osnovne škole do srednje škole i državne mature. Naši instruktori pristupaju matematici na način koji olakšava razumijevanje apstraktnih koncepta. Fokusiramo se na rješavanje problema i primjenu matematike u stvarnim situacijama.
             </p>
             <ul>
-              <li>Brže napredovanje uz osobnu pažnju</li>
-              <li>Prilagodljiv raspored</li>
+              <li>Logika i Računanje</li>
+              <li>Geometrija i Algebra</li>
               <li>Besplatni savjeti i trikovi</li>
             </ul>
           </div>
           <div className="col-lg-4 right-side">
-            <div className="price">
-              100€
+          <div className="icon-images">
+              <img src={icon1.src} alt="Icon 1" />
             </div>
           </div>
         </div>
@@ -36,22 +40,22 @@ const Pricelist = () => {
             <div className="vertical-line"></div>
           </div>
           <div className="col-lg-6 offset-sm-1 middle-side">
-            <h2>Paket 2 tjedno - "Brzi Napredak Paket"</h2>
+            <h2>Fizika - Razumijevanje zakona prirode</h2>
             <p>
               <strong>Leti kroz izazove!</strong> 
             </p>
             <p>
-              Naš Brzi Progres Paket nudi ti dvije satnice privatnih instrukcija svaki tjedan. Ubrzaj svoj napredak i postigni izvanredne rezultate.
+            Naši instruktori fizike pomoći će vam razumjeti osnovne zakone prirode i principima fizike. Bez obzira jeste li u osnovnoj školi, gimnaziji ili pripremate se za fakultet, prilagodit ćemo nastavu vašim potrebama. Istražujemo praktične primjene fizike kako bismo olakšali učenje.
             </p>
             <ul>
-              <li>Intenzivna podrška i usmjerenost</li>
-              <li>Prilika za dublje razumijevanje gradiva</li>
+              <li>Priroda i Zakoni Svijeta</li>
+              <li>Eksperimenti i Teorije</li>
               <li>Personalizirani pristup</li>
             </ul>
           </div>         
           <div className="col-lg-4 right-side">
-            <div className="price">
-              100€
+            <div className="icon-images">
+              <img src={icon2.src} alt="Icon 2" />
             </div>
           </div>
         </div>
@@ -61,28 +65,28 @@ const Pricelist = () => {
             <div className="vertical-line"></div>
           </div>
           <div className="col-lg-6 offset-sm-1 middle-side">
-            <h2>Grupni Paket - "Timski Uspon"</h2>
+            <h2>Kemija - Svijet atoma i molekula</h2>
             <p>
               <strong>Uči i rasti zajedno!</strong> 
             </p>
             <p>
-              Grupni Paket je savršen za one koji vole učiti u timskom okruženju. Sudjeluj u grupnim satima s prijateljima i zajedno rastite.
+            Kemija može biti zahtjevan predmet, ali uz naše instrukcije postat će vam razumljivija i zanimljivija. S naglaskom na praktičnim eksperimentima, naučit ćete o kemijskim reakcijama i svojstvima tvari. Pripremite se za državnu maturu ili jednostavno produbite svoje znanje kemije
             </p>
             <ul>
-              <li>Djeljenje znanja i iskustva</li>
+              <li>Elementi i Kemijske Reakcije.</li>
               <li>Poticanje međusobne podrške</li>
-              <li>Dostupno za manje grupe</li>
+              <li>Laboratorijske Vještine.</li>
             </ul>
           </div>
           <div className="col-lg-4 right-side">
-            <div className="price">
-              100€
+          <div className="icon-images">
+              <img src={icon3.src} alt="Icon 3" />
             </div>
           </div>
         </div>
       </div>
       </div>
-      </div>
+      </div></div>
   
   )
 };

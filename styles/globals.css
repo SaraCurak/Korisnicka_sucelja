@@ -63,7 +63,7 @@ a {
 }
 
 .logo {
-  height: 20px;
+  height: 40px;
   margin-right: 50px;
   margin-top: 10px;
   float: left;
@@ -260,7 +260,7 @@ a {
   width: 100%;
   position: relative;
   margin-top: 60px;
-  background: url(../public/images/bg1.jpeg);
+  background: url(../public/images/bg2.jpeg);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -729,6 +729,12 @@ position: absolute; /* Position the icon-container relative to the image-contain
   justify-content: center;
   align-items: center;
 }
+.testimonials-row3 {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .testimonial-container .col-lg-6 {
   padding: 0;
@@ -996,7 +1002,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
   align-items: center;
   width: 100%;
   height: 100%;
-  background-image: url("../public/images/bg-bw.png"); 
+  /* background-image: url("../public/images/color-mono.png");  */
   background-repeat: repeat;
   background-size: 800px;
   padding: 20px;
@@ -1040,7 +1046,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
   align-items: center;
   width: 190px;
   height: 190px;
-   background-color: #0B3D91 /*#197eff*/;
+   background-color:  #6EB5E5 /*#197eff*/;
   border-radius: 50%;
   font-size: 18px;
   font-weight: bold;
@@ -1054,7 +1060,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
 
 
 .faqQuestionCircle:hover {
-  background-color: #6EB5E5;
+  background-color: #6f90af;
   transform: scale(1.1);
   animation: bounce 0.6s infinite alternate;
 }
@@ -1087,7 +1093,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: red;
+  background: white;
 }
 
 .faqRow {
@@ -1101,6 +1107,8 @@ position: absolute; /* Position the icon-container relative to the image-contain
 
 .faqRowTitle {
   font-size: 24px;
+  background-color: #4f5884;
+  
 
 }
 /* Add this CSS to your project */
@@ -1198,8 +1206,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffcc00; /* Background color for the circle */
-  border-radius: 70%; /* Rounded shape for the circle */
+ /* Rounded shape for the circle */
 
 }
 .contact-title {
@@ -1278,20 +1285,6 @@ position: absolute; /* Position the icon-container relative to the image-contain
   font-size: 16px;
 }
 
-.contact-form .cf-button[type="submit"] {
-  background-color: #ffcc00;
-  color: #000;
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form .cf-button[type="submit"]:hover {
-  background-color: #ff9900;
-}
 
 
 /* PriceList.css */
@@ -1303,7 +1296,8 @@ position: absolute; /* Position the icon-container relative to the image-contain
   min-height: 100vh; /* Ensure the container covers the viewport height */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
+  background-color: #6f90af; /* Center content horizontally */
 }
 
 
@@ -1468,7 +1462,7 @@ h2 {
 
 .vertical-line {
   width: 8px;
-  background-color: #3498db; /* Color of the vertical line */
+  background-color: #4f5884; /* Color of the vertical line */
   /* Adjust the height to match the price-item height */
   height: 100%;
 }
@@ -1776,4 +1770,14 @@ p {
     font-size: 24px;
     background-color: #fff; /* Increase font size */
     width: fit-content;
+  }
+
+  .icon-images {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 110px;
+    position: relative;
+    z-index: 1; /* Set a higher z-index */
   }
