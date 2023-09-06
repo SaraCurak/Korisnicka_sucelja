@@ -1,5 +1,17 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
+}
+.container1 {
+  padding: 0;
+  background-color: red;
+}
+.container2 {
+  padding: 0;
+  background-color: #272f55;
+}
+.container2 {
+  padding: 0;
+  background-color: grey;
 }
 
 .main {

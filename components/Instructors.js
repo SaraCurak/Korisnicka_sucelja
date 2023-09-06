@@ -15,38 +15,34 @@ const Instructors = () => {
     }, []);
       
     return (
-        <div className="testimonial-container">
-            <div className="box">
-                
-                    <div className="heading">
-                        Naši instruktori
-                    </div>
-                      
+        <div>
+            <div className="testimonials-row">
+                <div className="testimonial-container">
+                <div className="brushed-title-container-cover">
+                 <h2 className="brush">Vrhunski instruktori</h2>
             </div>
 
-      
-            <div className="tile">
-                
-                    <div className="col-lg-6">
-                        <div className="testimonial-image">
-                            <img src={instruktor1.src}/> 
-                        </div>
-                        <div className="testimonial-overlay"></div>
+            <div className="tile instructors-container">
+                <div className="col-lg-6">
+                    <div className="testimonial-image">
+                         <img src={instruktor1.src}/> 
                     </div>
+                    <div className="testimonial-overlay"></div>
+                </div>
 
-                    <div className="col-lg-6">
-                        <div className="testimonial-content testimonial-content-right">
-                            <div className="testimonial-name">
-                                Lana Matić
-                            </div>
-                            <div className="testimonial-position">
-                                Matematika
-                            </div>
-                            <div className="testimonial-quote">
-                                "Pozdrav svima! Ja sam Lana, student matematike koji voli rješavati zagonetke. Osim matematičkih izazova, bavim se i fotografijom i dizajnom. Kroz svoj rad u centru za poduke, želim potaknuti kreativnost učenika i pokazati im da matematika nije samo brojevi, već i igra uma."
-                            </div>
+                <div className="col-lg-6">
+                    <div className="testimonial-content testimonial-content-right">
+                        <div className="testimonial-name">
+                            Lana Matić
+                        </div>
+                        <div className="testimonial-position">
+                            Matematika
+                        </div>
+                        <div className="testimonial-quote">
+                            "Pozdrav svima! Ja sam Lana, student matematike koji voli rješavati zagonetke. Osim matematičkih izazova, bavim se i fotografijom i dizajnom. Kroz svoj rad u centru za poduke, želim potaknuti kreativnost učenika i pokazati im da matematika nije samo brojevi, već i igra uma."
                         </div>
                     </div>
+                </div>
 
                 <div className="col-lg-6">
                     <div className="testimonial-content testimonial-content-left">
@@ -68,6 +64,24 @@ const Instructors = () => {
                     </div>
                     <div className="testimonial-overlay"></div>
                 </div>
+
+
+            </div>
+        </div>
+    </div>
+    {/* drugi  */}
+    <div className="testimonials-row2">
+            <div className="testimonial-container">
+                <div className="box">
+                    
+                        <div className="heading">
+                            Naši instruktori
+                        </div>
+                        
+                </div>
+        
+      
+            <div className="tile instructors-container">
 
                 <div className="col-lg-6">
                     <div className="testimonial-image">
@@ -111,6 +125,24 @@ const Instructors = () => {
                     <div className="testimonial-overlay"></div>
                 </div>
 
+
+            </div>
+        </div>
+    </div>
+    {/* treci */}
+    <div className="testimonials-row">
+            <div className="testimonial-container">
+                <div className="box">
+                    
+                        <div className="heading">
+                            Naši instruktori
+                        </div>
+                        
+                </div>
+        
+      
+            <div className="tile instructors-container">
+
                 <div className="col-lg-6">
                     <div className="testimonial-image">
                         <img src={instruktor3.src}/>
@@ -153,8 +185,11 @@ const Instructors = () => {
                     <div className="testimonial-overlay"></div>
                 </div>
 
-            </div>     
+
+            </div>
         </div>
+    </div>
+    </div>
     );
 };
 

@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.css'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Main from '../components/Main'
+import Bundle  from '../components/Bundle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +18,7 @@ export default function Predmeti() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Bundle />
       <Footer />
     </div>
   )

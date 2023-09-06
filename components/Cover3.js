@@ -10,7 +10,8 @@ import icon4 from '../public/images/icon-box-4.png';
 
 const Cover3 = () => {
   return (
-    <div className="cover3-container">
+    
+    <div className="cover3-container"><div className="box">
       <div className="brushed-title-container-cover">
         <h2 className="brush">Vrhunski instruktori</h2>
       </div>
@@ -50,6 +51,7 @@ const Cover3 = () => {
             </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

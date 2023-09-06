@@ -14,7 +14,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 /*navbar*/
 
 .navbar {
@@ -285,6 +284,7 @@ a {
   justify-content: center;
   align-items: flex-end;
   width: 100%;
+  margin-bottom: -50px;
 }
 
 .teacher-image {
@@ -346,22 +346,29 @@ a {
   }
 }
  /* Style for the Cover1 Container */
-.cover-container {
+ .cover1-container {
   background-color: red; /* Light grey background color */
-  padding: 20px;
-  width: 100%; /* Adjust width as needed */
-  margin: 0 auto;
-   /* Center the cover container */
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* Center the cover container */
 }
-/* Add this CSS for the curved top image */
-.curvy-bottom {
+
+.cover1-container::after {
+  content: "";
+  background: url(../public/images/curvy-bottom.png);
   position: absolute;
-  bottom: -775px;
-  right: 0;
-  width: 100%; /* Adjust the width as needed */
-  height: auto; /* Automatically adjust the height to maintain aspect ratio */
-  z-index: 1; /* Adjust the z-index as needed */
+  bottom: 0; /* Position it at the bottom */
+  right: -16px; /* Position it at the right */
+  width: 800px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  z-index: 3;
 }
+
+
+/* Add this CSS for the curved top image */
+
 
 .cover-content {
   display: flex;
@@ -373,7 +380,7 @@ h2.brush {
   font-size: 24px;
   text-align: center;
   color: #000;
-  background-color: #3498db;
+  background-color: #272f55;
   position: relative;
   z-index: 0;
   padding-bottom: 2px;/* VAMO MINJAT ZA TITLE VELICINU */
@@ -409,10 +416,10 @@ h2.brush {
 }
 
 .cover-text {
-  margin-top: 50px;
+  
   flex: 3;
   width:max-content;
-  height:60vh; /* Increased flex value for more height */
+  height:max-content; /* Increased flex value for more height */
 }
 .cover-text p{
   font-size: 20px;
@@ -444,22 +451,6 @@ img {
 
 
 /* Cover2 */
-.cover2-container {
-  background-color: #3498db; /* Light grey background color */
-  padding: 20px;
-  width: 100%; /* Adjust width as needed */
-  margin: 0 auto;
-   /* Center the cover container */
-}
-/* Add this CSS for the curved top image */
-/* Cover2 */
-.cover2-container {
-  background-color: #3498db;
-  padding: 20px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 /* .cover2-content {
   display: flex;
   justify-content: space-between;
@@ -518,12 +509,13 @@ h2.brush {
 /* Cover2 */
 /* Cover2 */
 .cover2-container {
-  background-color: #3498db;
+  background-color: #272f55; /* Light grey background color */
   padding: 20px;
-  width: 100%;
+  width: 100%; /* Adjust width as needed */
   margin: 0 auto;
-  padding-bottom: 40px;
+   /* Center the cover container */
 }
+
 
 .cover2-content {
   display: flex;
@@ -583,7 +575,7 @@ h2.brush {
 
 .cover2-text p {
   font-size: 20px;
-  color: #000;
+  color: #fff;
   margin-bottom: 20px; /* Adjusted margin for better spacing between paragraphs */
   font-weight: bold;
 }
@@ -651,7 +643,7 @@ h2.brush {
 
 /* Cover3 */
 .cover3-container {
-  background-color: grey; /* Light grey background color */
+  background-color: white; /* Light grey background color */
   padding: 20px;
   width: 100%; /* Adjust width as needed */
   margin: 0 auto; /* Center the cover container */
@@ -679,7 +671,7 @@ h2.brush {
 .rotating-image {
   width: 100%;
   height: auto;
-  animation: spin 150s linear infinite;
+  animation: spin 100s linear infinite;
   z-index: 20;
 }
 
@@ -697,6 +689,7 @@ z-index: 30;
 position: absolute; /* Position the icon-container relative to the image-container */
   top: 90px; /* Adjust the top position as needed */
   left: 70px;
+
 }
 
 .icon3 {
@@ -718,8 +711,9 @@ position: absolute; /* Position the icon-container relative to the image-contain
 .icon3 p {
   margin-left: 20px;
   font-size: 32px;
-  color: #000;
-  font-weight: 500;
+  color: #272f55;
+  font-weight: 600;
+  height: 20px;
 }
 
 .icon3:hover {
@@ -744,15 +738,24 @@ position: absolute; /* Position the icon-container relative to the image-contain
 /* Testimonials */
 
 .testimonial-container {
-  padding-bottom: 30px;
-  margin-bottom: 60px;
-  margin-top: 200px;
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center;
-}
 
+  max-width: 1000px; /* Adjust the maximum width as per your preference */
+  margin: 0 auto;
+  padding-bottom: 30px;
+
+}
+.instructors-container{
+  background-color: red;
+
+}
+.instructors-container .col-lg-6{
+  z-index: 5;
+  
+}
+.testimonials-row{
+  background-image: url("../public/images/bg-bw.png");
+  background-size: cover;
+}
 .testimonial-container .col-lg-6 {
   padding: 0;
 }
@@ -763,21 +766,15 @@ position: absolute; /* Position the icon-container relative to the image-contain
 
 .testimonial-container > .tile > div {
   position: relative;
-  
-  max-width: fit-content;
+  display: table;
   margin-bottom: 40px;
   margin-top: 40px;
-  z-index: -2;
+  background-color: #fff;
 }
+/* Add this CSS to your stylesheets */
 
-.testimonial-container .col-lg-12 {
-  padding: 0;
-  background-color: #0B3D91;
-  display: flex;
-  padding-right: 80px;
-  padding-bottom: 30px;
 
-}
+
 .testimonial-image {
   width: 300px;
   height: 300px;
@@ -852,25 +849,53 @@ position: absolute; /* Position the icon-container relative to the image-contain
 	overflow: hidden;
 }
 
-
 /* circle */
 .content-container {
   display: flex;
   flex-direction: column;
   align-items: normal;
-  margin-left: 50px;
-  height: 200vh;
+  margin-left: 200px;
+  margin-top: 200px;
+  height: fit-content;
   width: 70%;
 }
 
-.row {
-  height: 350px;
-  margin-bottom: 0;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Add these styles at the end of your existing CSS */
+
+/* Update your existing CSS */
+
+.row::before {
+  content: '';
+  width: 130px; /* Adjust arrow width as needed */
+  height: 80px; /* Adjust arrow height as needed */
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  position: absolute;
+  
+  transform: translateY(-50%);
+  
+  margin-bottom: 50px; /* Hide arrows by default */
 }
+
+.row:nth-child(1)::before {
+  background-image: url('../public/images/top-arrow.png'); /* Adjust the path to your arrow image */
+  margin-left: 550px;/* Adjust arrow position as needed */
+  display: block;top: 35%; /* Show arrow */
+}
+
+
+.row:nth-child(2)::after {
+  background-image: url('../public/images/top-arrow.png'); /* Adjust the path to your arrow image */
+  right: -50px; /* Adjust arrow position as needed */
+  display: block; /* Show arrow */
+}
+
+/* Rest of your existing CSS... */
+
+
+/* Rest of your existing CSS... */
+
 
 .row:nth-child(1) .element-set .circle {
   animation: diagonalBounce 2s infinite;
@@ -884,7 +909,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
 
 .row:nth-child(2) .element-set .circle {
   position: absolute;
-  right: 50px;
+  right: -50px; /* Adjust this value as needed */
   animation: slide 2s linear infinite;
 }
 
@@ -896,11 +921,12 @@ position: absolute; /* Position the icon-container relative to the image-contain
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 120px;
 }
 
 .circle-container {
   display: flex;
-  height: 100vh;
+  height: fit-content;
   width: 50vh;
   justify-content: center;
   align-items: center;
@@ -921,6 +947,8 @@ position: absolute; /* Position the icon-container relative to the image-contain
   position: relative;
   animation: bounce 2s infinite;
 }
+
+/* Rest of your CSS... */
 
 @keyframes bounce {
   0%, 100% {
@@ -961,6 +989,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
 
 .text-container h2 {
   font-size: 24px;
+  text-align: left;
 }
 
 .text-container p {
@@ -1627,4 +1656,190 @@ p {
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
+/* The ribbon */
 
+.ribbon{
+	width:100px;
+	height:150px;
+	background-color:#fff;
+	position:absolute;
+	right:100px;
+	top:-350px;
+}
+.ribbon::before{
+		content: '';
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		bottom: -50px;
+		border-left: 50px solid #fff;
+		border-right: 50px solid #fff;
+		border-bottom: 50px solid transparent;
+	}
+.ribbon::after{
+		content:'';
+		width:200px;
+		height:270px;
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		bottom:-120px;
+		background-color:#507abd;
+		transform:skewY(35deg) skewX(0);
+	}
+  .backgroundp {
+    padding: 0 25px 25px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .backgroundp::after {
+    content: '';
+    background: #60a9ff;
+    background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+    background: -webkit-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+    background: linear-gradient(to bottom, #60a9ff 0%, #4394f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#60a9ff',
+      endColorstr='#4394f4',
+      GradientType=0
+    );
+    height: 350px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  @media (min-width: 900px) {
+    .backgroundp {
+      padding: 0 0 25px;
+    }
+  }
+  
+  .containerp {
+    margin: 0 auto;
+    padding: 50px 0 0;
+    max-width: 960px;
+    width: 100%;
+  }
+  
+  .panel {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    margin-top: 40px;
+  }
+  
+  .pricing-table {
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08),
+      0px 20px 31px 3px rgba(0, 0, 0, 0.09),
+      0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 900px) {
+    .pricing-table {
+      flex-direction: row;
+    }
+  }
+  
+  .pricing-table * {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+    padding: 25px;
+  }
+  
+  .pricing-plan:last-child {
+    border-bottom: none;
+  }
+  
+  @media (min-width: 900px) {
+    .pricing-plan {
+      border-bottom: none;
+      border-right: 1px solid #e1f1ff;
+      flex-basis: 100%;
+      padding: 25px 50px;
+    }
+  
+    .pricing-plan:last-child {
+      border-right: none;
+    }
+  }
+  
+  .pricing-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pricing-img {
+    max-width: 100%;
+  }
+  
+  
+  .pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .pricing-features {
+    color: #016FF9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+  }
+  
+  .pricing-features-item {
+    border-top: 1px solid #e1f1ff;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+  }
+  
+  .pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+  }
+  
+  .pricing-price {
+    color: #016FF9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348EFE;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+  }
+  
+  .pricing-button:hover,
+  .pricing-button:focus {
+    background-color: #e1f1ff;
+  }
+  
+  .pricing-button.is-featured {
+    background-color: #48aaff;
+    color: #fff;
+  }
+  
+  .pricing-button.is-featured:hover,
+  .pricing-button.is-featured:active {
+    background-color: #269aff;
+  }
+  

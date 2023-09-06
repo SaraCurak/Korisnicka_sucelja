@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 const menuItemsList = [
   {
-      name: 'home',
+      name: 'Naslovnica',
       slug: '',
       isClicked: false
   },

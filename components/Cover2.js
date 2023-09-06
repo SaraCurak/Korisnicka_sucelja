@@ -6,7 +6,8 @@ import icon4 from '../public/images/icon4.png';
 
 const Cover2 = () => {
   return (
-    <div className="cover2-container">
+    
+    <div className="cover2-container"><div className="box">
       <div className="brushed-title-container-cover">
         <h2 className="brush">Instrukcije 1 na 1</h2>
       </div>
@@ -36,6 +37,7 @@ const Cover2 = () => {
           <h3>Napredni program</h3>
         </div>
       </div>
+    </div>
     </div>
   );
 };
