@@ -21,19 +21,24 @@ const Cover2 = () => {
       </div>
       <div className="icon-container">
         <div className="icon">
-          <img src={icon1.src} alt="Icon 1" />
+        
+        <a href="/predmeti"><img src={icon1.src} alt="Icon 1" /></a>
           <h3>Popravljanje ocjena</h3>
+          
         </div>
         <div className="icon">
-          <img src={icon2.src} alt="Icon 2" />
+        <a href="/predmeti">
+          <img src={icon2.src} alt="Icon 2" /></a>
           <h3>Priprema mature</h3>
         </div>
         <div className="icon">
-          <img src={icon3.src} alt="Icon 3" />
+        <a href="/predmeti">
+          <img src={icon3.src} alt="Icon 3" /></a>
           <h3>Pomoć pri učenju</h3>
         </div>
         <div className="icon">
-          <img src={icon4.src} alt="Icon 4" />
+        <a href="/predmeti">
+          <img src={icon4.src} alt="Icon 4" /></a>
           <h3>Napredni program</h3>
         </div>
       </div>

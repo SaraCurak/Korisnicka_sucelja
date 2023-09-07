@@ -17,21 +17,21 @@ const Footer = () => {
             <div className="footer-menu">
                 <div className="footer-menu-left">
                     <div className="footer-menu-container">
-                        <span><a href="#"> prijava </a></span>
-                        <span><a href="#"> instruktori  </a></span>
-                        <span><a href="#"> uputstva </a></span>
+                        <span><a href="#"> Prijava </a></span>
+                        <span><a href="#"> Instruktori  </a></span>
+                        <span><a href="#"> Uputstva </a></span>
                     </div>
                 </div>
                 <div className="footer-logo">
                     <a href="/">
-                        <img src={logoSrc}/>
+                        <img src={logoSrc.src}/>
                     </a>
                 </div>
                 <div className="footer-menu-right">
                     <div className="footer-menu-container">
-                        <span><a href="#"> faq </a></span>
-                        <span><a href="#"> cjenik </a></span>
-                        <span><a href="#"> kontakt </a></span>
+                        <span><a href="#"> FAQ </a></span>
+                        <span><a href="#"> Cjenik </a></span>
+                        <span><a href="#"> Kontakt </a></span>
                     </div>
                 </div>
             </div>

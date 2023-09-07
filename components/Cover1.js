@@ -25,7 +25,9 @@ const Cover1 = () => {
             </p>
           </div>
           <div className="cover-image">
+          <a href="/predmeti">
             <img src={girl.src}/>
+            </a>
           </div>
         </div>
       </div>

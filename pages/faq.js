@@ -8,15 +8,15 @@ import Navbar2 from '@/components/Navbar2';
 const entriesList = [
   {
     question: "Kako izvršiti plaćanje?",
-    answer: "Plaćanja se mogu izvršiti putem našeg sigurnog online sustava za plaćanje. Prihvaćamo glavne kreditne kartice i PayPal radi vaše praktičnosti.",
+    answer: "Plaćanja se mogu izvršiti putem našeg sigurnog online sustava za plaćanje. Prihvaćamo glavne kreditne kartice.",
   },
   {
     question: "Postoje li skriveni troškovi?",
-    answer: "Ne, transparentni smo u vezi naše cijene. Trošak koji vidite prilikom rezervacije je ukupni trošak. Nema dodatnih skrivenih troškova.",
+    answer: "Ne, transparentni smo u vezi naše cijene. Trošak koji vidite prilikom rezervacije je ukupni trošak.",
   },
   {
     question: "Kada trebam izvršiti plaćanje?",
-    answer: "Nakon što rezervirate termin, dobit ćete potvrdu rezervacije koja će sadržavati detalje o plaćanju. Preporučujemo da izvršite plaćanje što je prije moguće kako biste osigurali svoj termin."
+    answer: "Nakon što rezervirate termin, dobit ćete potvrdu rezervacije koja će sadržavati detalje o plaćanju."
   },
   {
     question: "Mogu li zatražiti određenog instruktora?",
@@ -28,7 +28,7 @@ const entriesList = [
   },
   {
     question: "Kako se odabiru instruktori za vašu platformu?",
-    answer: "Svi naši instruktori prolaze kroz temeljitu procjenu njihovog stručnog znanja i pedagoških vještina. Vodimo računa i o ocjenama koje dobivaju od učenika kako bismo osigurali visok standard kvalitete podučavanja."
+    answer: "Naši instruktori prolaze kroz temeljitu procjenu stručnog znanja i pedagoških vještina, kako bismo osigurali visok standard podučavanja."
   },  
   {
     question: "Je li dostupna online instrukcija?",
@@ -36,11 +36,11 @@ const entriesList = [
   },
   {
     question: "Kako rezervirati termin za instrukcije?",
-    answer: "Posjetite našu stranicu za rezervaciju, odaberite predmet za koji trebate pomoć i odaberite dostupno vrijeme. Slijedite korake kako biste potvrdili svoju rezervaciju.",
+    answer: "Posjetite našu stranicu za rezervaciju, odaberite predmet za koji trebate pomoć i odaberite dostupno vrijeme.",
   },
   {
     question: "Mogu li promijeniti svoj raspored instrukcija?",
-    answer: "Da, možete! Ako trebate promijeniti svoj raspored instrukcija, prijavite se na svoj račun i idite na odjeljak 'Moje rezervacije'. Tamo možete premjestiti svoju sesiju.",
+    answer: "Da, možete! Ako trebate promijeniti svoj raspored instrukcija, prijavite se na svoj račun i idite na odjeljak 'Moje rezervacije'.",
   },
 ];
 

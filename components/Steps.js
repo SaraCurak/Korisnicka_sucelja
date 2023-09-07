@@ -8,17 +8,16 @@ const Steps = () => {
   return (
     <div>
           <div className="testimonials-row2">
-        <div className="testimonial-container">
-            <div className="brushed-title-container-cover">
-                <h2 className="brushi">Uputstva</h2>
+            <div className="testimonial-container">
+                <div className="brushed-title-container-cover">
+                    <h2 className="brushi">Uputstva</h2>
+                </div>
             </div>
-        </div>
-    </div>
+          </div>
       <div className="testimonials-row2">
         <div className="testimonial-container">
           <div className="tile instructors-container">
-
-
+            
             <div className="col-lg-6">
                 <div className="testimonial-images">
                   <div className="circle">1</div>

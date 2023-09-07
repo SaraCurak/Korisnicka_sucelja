@@ -37,7 +37,13 @@ const menuItemsList = [
       name: 'Kontakt',
       slug: 'kontakt',
       isClicked: false
-  }
+  },
+  {
+    name: 'Modal',
+    slug: 'modal',
+    isClicked: false
+},
+  
 ];
 
 const Navbar = () => {

@@ -10,7 +10,7 @@ import Footer2 from '../components/Footer2'
 import BundlePack  from '../components/BundlePack'
 import Bundle  from '../components/Bundle'
 import BundlePackdm  from '../components/BundlePackdm'
-import Bundledm  from '../components/Bundledm'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
