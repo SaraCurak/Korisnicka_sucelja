@@ -79,7 +79,7 @@ const Navbar = () => {
           <div className="buttons-container">
             <a href="/account">
               <button className="button-55">
-                <span> Prijavi se </span>
+                <span> Rezerviraj </span>
               </button>
             </a>
           </div>

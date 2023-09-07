@@ -18,7 +18,7 @@ const Cover3 = () => {
       <div className="cover-content">
         <div className="cover-text">
           <p>
-            Kako bi Vam omogućili vrhunsku uslugu instrukcija, zapošljavamo samo najbolje instruktore na području Hrvatske. U prosjeku samo 5% instruktora prođe našu temeljitu provjeru komunikativnosti, znanja i sposobnosti prijenosa istog.
+            Kako bismo Vam omogućili vrhunsku uslugu instrukcija, zapošljavamo samo najbolje instruktore na području Hrvatske. U prosjeku samo 5% instruktora prođe našu temeljitu provjeru komunikativnosti, znanja i sposobnosti prijenosa istog.
           </p>
           <p>
             Mi smo odabrali najbolje za vas, zato da vi ne morate birati!

@@ -26,6 +26,15 @@ a {
   overflow: hidden;
 }
 
+.navbar .button-55 {
+  height: 44px;
+  margin-top: 8px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4f5884;
+}
+
 .sticky-nav {
   position: fixed;
   top: 0;
@@ -137,7 +146,8 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-size:contain;
+  background-size: 240px;
+  background-position-y: center;
   height: 20vh;
 }
 
@@ -158,7 +168,8 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-size: contain;
+  background-size: 240px;
+  background-position-y: center;
   height: 20vh;
 }
 
@@ -343,8 +354,14 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+  padding-top: 100px;
   /* Center the cover container */
 }
+
+.subjects-page .subjects-intro-container {
+  padding-top: 0px;
+}
+
 .cover1-container::before {
   content: "";
   background: url(../public/images/girl-back.png);
@@ -377,6 +394,7 @@ a {
   flex: 3;
   width:max-content;
   height:max-content; /* Increased flex value for more height */
+  margin-right: 100px;
 }
 .cover-text p{
   font-size: 20px;
@@ -470,6 +488,8 @@ img {
   padding: 20px;
   width: 100%; /* Adjust width as needed */
   margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
    /* Center the cover container */
 }
 
@@ -563,25 +583,25 @@ img {
 /* Add white circle with a dotted border */
 .icon::before {
   content: "";
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-color: #fff;
   border: 2px dotted #3498db;
   border-radius: 50%;
   position: absolute;
-  top: 25%; /* Vertically center the circle */
+  top: 17%; /* Vertically center the circle */
   left: 50%; /* Horizontally center the circle */
   transform: translate(-50%, -50%);
   transition: background-color 0.3s ease;
 }
 
 .icon:hover::before {
-  background-color: rgb(115, 116, 117);
+  background-color: rgb(214, 214, 214);
 }
 
 .icon img {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   z-index: 1;
   position: relative;
 }
@@ -604,6 +624,7 @@ img {
   padding: 20px;
   width: 100%; /* Adjust width as needed */
   margin: 0 auto; /* Center the cover container */
+  padding-top: 100px;
 }
 .circle3-image {
   flex: 1;
@@ -645,8 +666,16 @@ img {
 z-index: 30;
 position: absolute; /* Position the icon-container relative to the image-container */
   top: 90px; /* Adjust the top position as needed */
-  left: 70px;
+  left: 84px;
 
+}
+
+.icon-container h3 {
+  color: white;
+  text-transform: uppercase;
+  /* font-weight: 600; */
+  margin-top: 40px;
+  font-size: 20px;
 }
 
 .icon3 {
@@ -667,7 +696,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
 
 .icon3 p {
   margin-left: 20px;
-  font-size: 32px;
+  font-size: 28px;
   color: #272f55;
   font-weight: 600;
   height: 20px;
@@ -708,6 +737,15 @@ position: absolute; /* Position the icon-container relative to the image-contain
   background-repeat: no-repeat;
 }
 
+.testimonials-row-middle .testimonial-content{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.testimonials-row-middle .testimonial-image, .testimonials-row-middle .testimonial-overlay {
+  margin-top: 72px;
+}
+
 .testimonial-containeru {
 
   max-width: 1000px;
@@ -719,8 +757,8 @@ position: absolute; /* Position the icon-container relative to the image-contain
 }
 
 .testimonials-row {
-  background-image: url("../public/images/bg-bw.png");
-  background-size: 800px;
+  background-image: url("../public/images/bw-mono.png");  
+  background-size: 400px;
 }
 
 .testimonials-row2 {
@@ -1056,11 +1094,13 @@ position: absolute; /* Position the icon-container relative to the image-contain
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-align: center;
   line-height: 1.5;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 
 .faqQuestionCircle:hover {
-  background-color: #6f90af;
+  background-color: #63a2ce ;
   transform: scale(1.1);
   animation: bounce 0.6s infinite alternate;
 }
@@ -1195,6 +1235,8 @@ position: absolute; /* Position the icon-container relative to the image-contain
   /* Rounded shape for the item */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: calc(33.33% - 10px); /* Smaller width for 3 columns */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* Style for the contact icon (using Font Awesome) */
@@ -1206,6 +1248,8 @@ position: absolute; /* Position the icon-container relative to the image-contain
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #6f90af;
+
  /* Rounded shape for the circle */
 
 }
@@ -1215,6 +1259,7 @@ position: absolute; /* Position the icon-container relative to the image-contain
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #6f90af;
 }
 /* Style for the contact text */
 .contact-text {
@@ -1333,6 +1378,7 @@ h2 {
   right: -70px;
   top: 0;
   background-image: url("../public/images/right-paintinggb.png");
+  background-size: cover;
   width: 78px; /* Adjust the width to match the image width */
   height: 34px;
   z-index: -2; /* Adjust the height to match the image height */
@@ -1396,6 +1442,11 @@ h2 {
   max-width: fit-content;
   align-items: center;
   background-color: #3498db; /* Center the price list */
+}
+
+.price-list .price-item:hover {
+  transform: scale(1.01);
+  transition: .25s;
 }
 
 .price-item-ind p {
@@ -1472,11 +1523,13 @@ h2.brush {
   font-size: 24px;
   background-color: #6f90af; /* Increase font size */
   width: fit-content;
+  color: white;
 }
 h2.brushw {
   margin: 0 0 10px 0; /* Add space below title */
   font-size: 24px;
-  background-color: white; /* Increase font size */
+  background-color: white;
+  color: #6f90af;
   width: fit-content;
 }
 
@@ -1485,6 +1538,7 @@ h2.brushi {
   margin: 40px 40px 40px 0; /* Add space below title */
   font-size: 36px;
   background-color: #6f90af; /* Increase font size */
+  color: white;
   width: fit-content;
   justify-content: center;
 }
@@ -1604,7 +1658,7 @@ p {
   
   .backgroundp::after {
     content: '';
-    background: #4f5884;
+    /* background: #4f5884;
     background: -moz-linear-gradient(top, #60a9ff 0%, #4f5884 100%);
     background: -webkit-linear-gradient(top, #60a9ff 0%, #4f5884 100%);
     background: linear-gradient(to bottom, #60a9ff 0%, #4f5884 100%);
@@ -1612,7 +1666,7 @@ p {
       startColorstr='#60a9ff',
       endColorstr='#4394f4',
       GradientType=0
-    );
+    ); */
     height: 350px;
     left: 0;
     position: absolute;
@@ -1626,16 +1680,35 @@ p {
       padding: 0 0 25px;
     }
   }
+
+  .pricing-topic-container {
+    background-color: white;
+    
+  }
+
+  .pricing-topic-container-title {
+    text-align: center;
+    color: #6f90af;
+    margin: 0 auto;
+    width: 960px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);    
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 32px;
+    margin-bottom: -36px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
   
   .containerp {
     margin: 0 auto;
-    padding: 50px 0 0;
+    padding: 0;
     max-width: 960px;
     width: 100%;
     display: flex; /* Use flexbox for centering vertically and horizontally */
  /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    justify-content: center;;
+    justify-content: center;
   }
   
   .panel {
@@ -1679,6 +1752,15 @@ p {
     border-bottom: 1px solid #e1f1ff;
     padding: 25px;
   }
+
+  .pricing-plan .button-55 {    
+    height: 44px;
+    margin-top: 8px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #6f90af;
+  }
   
   .pricing-plan:last-child {
     border-bottom: none;
@@ -1700,6 +1782,7 @@ p {
   .pricing-img-container {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
   }
   
   .pricing-img {
@@ -1711,6 +1794,7 @@ p {
     color: #888;
     font-weight: 600;
     letter-spacing: 1px;
+    margin: 0 auto;
   }
   
   .pricing-features {
@@ -1718,7 +1802,7 @@ p {
     font-weight: 600;
     letter-spacing: 1px;
     margin: 50px 0 25px;
-
+    padding-left: 0px;
   }
   
   .pricing-features-item {
@@ -1733,10 +1817,12 @@ p {
   }
   
   .pricing-price {
-    color: #000;
+    color: #6f90af;
+    font-weight: 800;
     display: block;
     font-size: 32px;
     font-weight: 400;
+    margin-bottom: 24px;
   }
   
   .pricing-button {

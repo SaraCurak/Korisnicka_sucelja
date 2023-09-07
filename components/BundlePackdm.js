@@ -3,6 +3,8 @@ import React from 'react';
 function BundlePackdm() {
   return (
     <div className="backgroundp">
+    <div className="pricing-topic-container">
+      <h2 className="pricing-topic-container-title"> DRŽAVNA MATURA </h2>
       <div className="containerp">
         <div className="panel pricing-table">
           <PricingPlan
@@ -35,6 +37,7 @@ function BundlePackdm() {
             price="300€"
           />
         </div>
+      </div>
       </div>
     </div>
   );

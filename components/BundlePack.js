@@ -3,6 +3,8 @@ import React from 'react';
 function BundlePack() {
   return (
     <div className="backgroundp">
+      <div className="pricing-topic-container">
+        <h2 className="pricing-topic-container-title"> OSNOVNA I SREDNJA ŠKOLA </h2>
       <div className="containerp">
         <div className="panel pricing-table">
           <PricingPlan
@@ -19,7 +21,7 @@ function BundlePack() {
             imgSrc="https://s28.postimg.cc/ju5bnc3x9/plane.png"
             header="2 sata tjedno"
             features={[
-              'Dublje razumijevanje sadržaja',
+              'Detaljna razrada',
               'Intenzivna podrška pri učenju',
             ]}
             price="75€"
@@ -30,11 +32,12 @@ function BundlePack() {
             header="Grupni paket"
             features={[
               'Dostupno za manje grupe',
-              'Djeljenje znanja i iskustva',
+              'Djeljenje znanja i iskustva polaznicima',
             ]}
             price="20€"
           />
         </div>
+      </div>
       </div>
     </div>
   );
@@ -55,6 +58,7 @@ function PricingPlan({ imgSrc, header, features, price, isFeatured }) {
       </ul>
       <span className="pricing-price">{price}</span>
       <a href="#/" className="button-55">
+        {/* mailto:_ID@yoursite.com */}
         {isFeatured ? 'Rezerviraj' : 'Rezerviraj'}
       </a>
     </div>

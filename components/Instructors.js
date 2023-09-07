@@ -74,7 +74,7 @@ const Instructors = () => {
         </div>
     </div>
     {/* drugi  */}
-    <div className="testimonials-row">
+    <div className="testimonials-row testimonials-row-middle">
             <div className="testimonial-container">
             <div className="brushed-title-container-cover">
                         <h2 className="brushi">Fizika</h2>
@@ -99,7 +99,7 @@ const Instructors = () => {
                             Fizika
                         </div>
                         <div className="testimonial-quote">
-                            "Dobar dan svima! Ja sam Mario, student fizike i zaljubljenik u glazbu. Pored istraživanja prirodnih zakona, sviram gitaru i pišem pjesme. U centru za poduke, koristim svoju strast za fizikom kako bih učenicima približio svijet znanosti na interaktivan način."
+                            "Dobar dan svima! Ja sam Mario, student fizike i zaljubljenik u glazbu. Pored istraživanja prirodnih zakona, sviram gitaru i pišem pjesme od kojih posebno volim stari <i>rock</i> i <i>punk</i> i <i>grunge </i>. U centru za poduke, koristim svoju strast za fizikom kako bih učenicima približio pojmove vezane za znanost na interaktivan način i tako ih uveo u svijet fizike."
                         </div>
                     </div>
                 </div>

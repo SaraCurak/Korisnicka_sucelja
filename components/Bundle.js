@@ -14,7 +14,7 @@ function Bundle() {
         </div>
     </div>
 
-    <div className="backgroundp">
+    {/* <div className="backgroundp">
       <div className="containerp">
         <div className="panel pricing-table">
           <PricingPlan
@@ -29,7 +29,9 @@ function Bundle() {
         </div>
         
       </div>
-    </div></div>
+    </div> */}
+    
+    </div>
   );
 }
 

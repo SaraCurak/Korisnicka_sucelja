@@ -26,7 +26,7 @@ export default function Predmeti() {
       <Navbar2 />
       <Bundle />
       <BundlePack />
-      <Bundledm />
+      {/* <Bundledm /> */}
       <BundlePackdm />
       <Footer2 />
       <Footer />

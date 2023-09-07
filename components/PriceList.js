@@ -10,6 +10,7 @@ const Pricelist = () => {
 
       <div className="box">
       <div className="price-list">
+          <a href="/kontakt">
         <div className="price-item">
           <div className="col-lg-1 vertical-line-container">
             <div className="vertical-line"></div>
@@ -34,7 +35,9 @@ const Pricelist = () => {
             </div>
           </div>
         </div>
+          </a>
         
+          <a href="/kontakt">
         <div className="price-item">
           <div className="col-lg-1 vertical-line-container">
             <div className="vertical-line"></div>
@@ -59,7 +62,9 @@ const Pricelist = () => {
             </div>
           </div>
         </div>
+        </a>
 
+        <a href="/kontakt">
         <div className="price-item">
           <div className="col-lg-1 vertical-line-container">
             <div className="vertical-line"></div>
@@ -84,6 +89,7 @@ const Pricelist = () => {
             </div>
           </div>
         </div>
+        </a>
       </div>
       </div>
       </div></div>

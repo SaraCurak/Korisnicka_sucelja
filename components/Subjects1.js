@@ -7,15 +7,15 @@ import girl2 from '../public/images/girl22.png'
 
 const Subjects1 = () => {
   return (
-<div>
+<div className="subjects-page">
     <div className="testimonials-row2">
-    <div className="testimonial-container">
+    <div className="testimonial-container subjects-title-container">
         <div className="brushed-title-container-cover">
             <h2 className="brushi">Predmeti</h2>
         </div>
     </div>
 </div>
-    <div className="cover1-container">
+    <div className="cover1-container subjects-intro-container">
       <div className="box">
         <div className="cover-content">
           <div className="cover-text">
