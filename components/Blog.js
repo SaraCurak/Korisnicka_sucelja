@@ -55,7 +55,8 @@ function Blog({ posts }) {
             </div>
             <div className="col-lg-7 offset-lg-1 blog-post-content-container">
               <h3 className="mb-0 blog-post-title">{post.subject}</h3>
-              <p className="mb-0 blog-post-content">{post.content.slice(0, 140)}{post.content.length > 70 ? '...' : ''}</p>           
+              <p className="mb-0 blog-post-content">{post.content.slice(0, 140)}{post.content.length > 70 ? '...' : ''}</p>
+              <p className="mb-0 blog-post-author">{post.author}</p>           
             </div>
             </a>
           </li>

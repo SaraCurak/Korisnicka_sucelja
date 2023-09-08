@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logoSrc from '../public/images/logo.png';
+import logoSrc from '../public/images/logo5.png';
 import { useRouter } from 'next/router';
 
 const menuItemsList = [

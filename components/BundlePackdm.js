@@ -21,7 +21,7 @@ function BundlePackdm() {
             imgSrc="https://s28.postimg.cc/ju5bnc3x9/plane.png"
             header="25 sati"
             features={[
-              'Dublje razumijevanje sadržaja',
+              'Dublje razumijevanje',
               'Intenzivna podrška pri učenju',
             ]}
             price="250€"
@@ -32,7 +32,7 @@ function BundlePackdm() {
             header="40 sati"
             features={[
               'Dostupno za manje grupe',
-              'Djeljenje znanja i iskustva',
+              'Djeljenje znanja i iskustva s prijateljima',
             ]}
             price="300€"
           />

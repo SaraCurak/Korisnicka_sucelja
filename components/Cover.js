@@ -23,7 +23,7 @@ const Cover = () => {
           <img src={teacher2.src} alt="teacher" className="teacher-image" />
           <div className="home-hero-content">
             <div className="home-hero-text">
-              "Učenje nikada ne prestaje."
+              Učenje nikada ne prestaje.
             </div>
             <div className="home-hero-button-container">
               <button className="button-55" onClick={toggleModal}>
