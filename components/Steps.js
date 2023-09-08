@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 
 const Steps = () => {
-  const [isClicked, setIsClicked] = useState(false);
-
   useEffect(() => {}, []);
 
   return (
