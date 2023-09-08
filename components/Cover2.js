@@ -3,6 +3,7 @@ import icon1 from '../public/images/icon1.png';
 import icon2 from '../public/images/icon2.png';
 import icon3 from '../public/images/icon3.png';
 import icon4 from '../public/images/icon4.png';
+import Link from 'next/link';
 
 const Cover2 = () => {
   return (
@@ -22,23 +23,23 @@ const Cover2 = () => {
       <div className="icon-container">
         <div className="icon">
         
-        <a href="/predmeti"><img src={icon1.src} alt="Icon 1" /></a>
+        <Link href="/predmeti"><img src={icon1.src} alt="Icon 1" /></Link>
           <h3>Popravljanje ocjena</h3>
           
         </div>
         <div className="icon">
-        <a href="/predmeti">
-          <img src={icon2.src} alt="Icon 2" /></a>
+        <Link href="/predmeti">
+          <img src={icon2.src} alt="Icon 2" /></Link>
           <h3>Priprema mature</h3>
         </div>
         <div className="icon">
-        <a href="/predmeti">
-          <img src={icon3.src} alt="Icon 3" /></a>
+        <Link href="/predmeti">
+          <img src={icon3.src} alt="Icon 3" /></Link>
           <h3>Pomoć pri učenju</h3>
         </div>
         <div className="icon">
-        <a href="/predmeti">
-          <img src={icon4.src} alt="Icon 4" /></a>
+        <Link href="/predmeti">
+          <img src={icon4.src} alt="Icon 4" /></Link>
           <h3>Napredni program</h3>
         </div>
       </div>

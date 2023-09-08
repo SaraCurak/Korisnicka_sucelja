@@ -3,6 +3,7 @@ import Image from 'next/image';
 import logoSrc from '../public/images/logo5.png'
 import facebook from '../public/images/facebook.png'
 import instagram from '../public/images/instagram.png'
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -17,21 +18,21 @@ const Footer = () => {
             <div className="footer-menu">
                 <div className="footer-menu-left">
                     <div className="footer-menu-container">
-                        <span><a href="/"> Prijava </a></span>
-                        <span><a href="/instruktori"> Instruktori  </a></span>
-                        <span><a href="/uputstva"> Uputstva </a></span>
+                        <span><Link href="/"> Prijava </Link></span>
+                        <span><Link href="/instruktori"> Instruktori  </Link></span>
+                        <span><Link href="/uputstva"> Uputstva </Link></span>
                     </div>
                 </div>
                 <div className="footer-logo">
-                    <a href="/">
+                    <Link href="/">
                         <img src={logoSrc.src}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="footer-menu-right">
                     <div className="footer-menu-container">
-                        <span><a href="/faq"> FAQ </a></span>
-                        <span><a href="/cjenik"> Cjenik </a></span>
-                        <span><a href="/kontakt"> Kontakt </a></span>
+                        <span><Link href="/faq"> FAQ </Link></span>
+                        <span><Link href="/cjenik"> Cjenik </Link></span>
+                        <span><Link href="/kontakt"> Kontakt </Link></span>
                     </div>
                 </div>
             </div>

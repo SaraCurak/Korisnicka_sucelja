@@ -2,6 +2,7 @@ import React from 'react';
 import girl from '../public/images/girl.png'
 import girlb from '../public/images/girl-back.png'
 import curvy from '../public/images/curvy-bottom.png'
+import Link from 'next/link';
 
 
 const Cover1 = () => {
@@ -25,9 +26,9 @@ const Cover1 = () => {
             </p>
           </div>
           <div className="cover-image">
-          <a href="/predmeti">
+          <Link href="/predmeti">
             <img src={girl.src}/>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
