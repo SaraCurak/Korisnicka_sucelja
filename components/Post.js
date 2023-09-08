@@ -15,7 +15,7 @@ function Post({ posts }) {
       <ul className="list-group">
         {posts.map((post) => (
           <li key={post.id} className="list-group-item d-flex justify-content-between align-items-center">
-            <a href={`http://localhost:3000/posts/${post.id}`}>
+            <Link href={`http://localhost:3000/posts/${post.id}`}>
             <div>
               <h3 className="mb-0">{post.subject}</h3>
               <p className="mb-0">{post.content.slice(0, 70)}{post.content.length > 70 ? '...' : ''}</p>           
@@ -27,7 +27,7 @@ function Post({ posts }) {
                 alt={post.subject}
                 className="blog-post-image"
               />
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logoSrc from '../public/images/logo5.png';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const menuItemsList = [
   {
@@ -77,15 +78,15 @@ const toggleModal = () => {
 
         <div className="box navbar-content">
           <div className="logo">
-            <a href="/">
+            <Link href="/">
               <img src={logoSrc.src} alt="Logo" />
-            </a>
+            </Link>
           </div>
           <ul className="menu-items">
             {menuItems.map((item) => (
-              <a href={item.slug} key={item.slug + item.name}>
+              <Link href={item.slug} key={item.slug + item.name}>
                 <li className={`menu-item ${item.isClicked ? "menu-item-clicked" : ""}`}>{item.name}</li>
-              </a>
+              </Link>
             ))}
           </ul>
           <div className="buttons-container">
