@@ -7,6 +7,7 @@ import icon1 from '../public/images/icon-box-1.png';
 import icon2 from '../public/images/icon-box-2.png';
 import icon3 from '../public/images/icon-box-3.png';
 import icon4 from '../public/images/icon-box-4.png';
+import Link from 'next/link';
 
 const Cover3 = () => {
   return (
@@ -24,7 +25,7 @@ const Cover3 = () => {
             Mi smo odabrali najbolje za vas, zato da vi ne morate birati!
           </p>
           <button className="button-55">
-          <a href="/instruktori">Instruktori</a>
+          <Link href="/instruktori">Instruktori</Link>
           </button>
         </div>
         <div className="circle3-image">
@@ -32,23 +33,23 @@ const Cover3 = () => {
             <img src={pattern.src} alt="Rotating Image" className="rotating-image" />
                 <div className="icon3-container">
                     <div className="icon3">
-                    <a href="/instruktori">
-                        <img src={icon1.src} alt="Icon 1" /></a>
+                    <Link href="/instruktori">
+                        <img src={icon1.src} alt="Icon 1" /></Link>
                         <p>Kvalificirani</p>
                     </div>
                     <div className="icon3">
-                    <a href="/instruktori">
-                        <img src={icon2.src} alt="Icon 1" /></a>
+                    <Link href="/instruktori">
+                        <img src={icon2.src} alt="Icon 1" /></Link>
                         <p>Motivirani</p>
                     </div>
                     <div className="icon3">
-                    <a href="/instruktori">
-                        <img src={icon3.src} alt="Icon 1" /></a>
+                    <Link href="/instruktori">
+                        <img src={icon3.src} alt="Icon 1" /></Link>
                         <p>Stručni</p>
                     </div>
                     <div className="icon3">
-                    <a href="/instruktori">
-                        <img src={icon4.src} alt="Icon 1" /></a>
+                    <Link href="/instruktori">
+                        <img src={icon4.src} alt="Icon 1" /></Link>
                         <p>Iskusni</p>
                     </div>
                 </div>
