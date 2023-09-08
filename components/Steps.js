@@ -18,7 +18,7 @@ const Steps = () => {
             
             <div className="col-lg-6">
                 <div className="testimonial-images">
-                  <div className="circle"><p>1</p></div>
+                  <div className="circle">{" 1 "}</div>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@ const Steps = () => {
                 
                 <div className="col-lg-6">
                     <div className="testimonial-images">
-                      <div className="circle">{" 2"}</div>
+                      <div className="circle">{" 2 "}</div>
                     </div>
                     
                 </div>
