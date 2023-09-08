@@ -1,5 +1,6 @@
 import React from 'react';
 import iconbox3 from '../public/images/icon-box-3.png'
+import Link from 'next/link';
 
 function Bundle() {
   return (
@@ -50,9 +51,9 @@ function PricingPlan({ imgSrc, header, features, price, price2, isFeatured }) {
       </ul>
       <span className="pricing-price">{price}</span>
       {price2 && <span className="pricing-price">{price2}</span>}
-      <a href="#/" className="button-55">
+      <Link href="#/" className="button-55">
         {isFeatured ? 'Free trial' : 'Rezerviraj'}
-      </a>
+      </Link>
     </div>
   );
 }

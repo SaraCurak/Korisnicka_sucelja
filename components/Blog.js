@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom'; 
 import Image from 'next/image'
+import Link from 'next/link';
 
 function Blog({ posts }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -41,7 +42,7 @@ function Blog({ posts }) {
 
         {filteredPosts.map((post) => (
           <li key={post.id} className="list-group-item d-flex justify-content-between align-items-center blog-post">
-            <a href={`http://localhost:3000/posts/${post.id}`}
+            <Link href={`http://localhost:3000/posts/${post.id}`}
             >
                         
             <div className="col-lg-3 blog-post-image-container">  
@@ -58,7 +59,7 @@ function Blog({ posts }) {
               <p className="mb-0 blog-post-content">{post.content.slice(0, 140)}{post.content.length > 70 ? '...' : ''}</p>
               <p className="mb-0 blog-post-author">{post.author}</p>           
             </div>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

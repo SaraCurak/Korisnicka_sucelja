@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function BundlePack() {
   return (
@@ -57,10 +58,10 @@ function PricingPlan({ imgSrc, header, features, price, isFeatured }) {
         ))}
       </ul>
       <span className="pricing-price">{price}</span>
-      <a href="#/" className="button-55">
+      <Link href="#/" className="button-55">
         {/* mailto:_ID@yoursite.com */}
         {isFeatured ? 'Rezerviraj' : 'Rezerviraj'}
-      </a>
+      </Link>
     </div>
   );
 }
