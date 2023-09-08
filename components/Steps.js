@@ -18,17 +18,17 @@ const Steps = () => {
             
             <div className="col-lg-6">
                 <div className="testimonial-images">
-                  <div className="circle">1</div>
+                  <div className="circle"><p>1</p></div>
                 </div>
             </div>
 
             <div className="col-lg-6">
               <div className="testimonial-content testimonials-content-right">
                 <div className="testimonial-name">
-                              Prijava
+                {" Prijava "}
                 </div>
                 <div className="testimonial-quote">
-                  Potrebno je kreirati korisnički račun, te se prijaviti prilikom svake rezervacije termina."
+                {" Potrebno je kreirati korisnički račun, te se prijaviti prilikom svake rezervacije termina.a "}
                 </div>
               </div>
             </div>
@@ -36,34 +36,34 @@ const Steps = () => {
             <div className="col-lg-6">
                     <div className="testimonial-content testimonial-content-left">
                         <div className="testimonial-name">
-                            Odabir termina
+                        {" Odabir termina "}
                         </div>
                         <div className="testimonial-quote">
-                        Nakon unosa razine instrukcija, predmeta, te datuma ponudit će Vam se slobodni termini.
+                        {" Nakon unosa razine instrukcija, predmeta, te datuma ponudit će Vam se slobodni termini. "}
                         </div>
                     </div>
                 </div>
                 
                 <div className="col-lg-6">
                     <div className="testimonial-images">
-                      <div className="circle">2</div>
+                      <div className="circle">{" 2"}</div>
                     </div>
                     
                 </div>
 
                 <div className="col-lg-6">
                 <div className="testimonial-images">
-                  <div className="circle">3</div>
+                  <div className="circle">{" 3 "}</div>
                 </div>
             </div>
 
             <div className="col-lg-6">
               <div className="testimonial-content testimonials-content-right">
                 <div className="testimonial-name">
-                              Potvrda
+                              {" Potvrda"}
                 </div>
                 <div className="testimonial-quote">
-                Nakon rezervacije, prikazat će se potvrda o uspješnoj rezervaciji termina.
+                {"Nakon rezervacije, prikazat će se potvrda o uspješnoj rezervaciji termina. "}
                 </div>
               </div>
             </div>
