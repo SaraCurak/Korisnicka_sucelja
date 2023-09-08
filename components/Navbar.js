@@ -39,10 +39,10 @@ const menuItemsList = [
       isClicked: false
   },
   {
-    name: 'Modal',
-    slug: 'modal',
-    isClicked: false
-},
+      name: 'Pet Plus',
+      slug: 'petplus',
+      isClicked: false
+  },
   
 ];
 
@@ -50,6 +50,7 @@ const Navbar = () => {
   const [menuItems, setMenuItems] = useState(menuItemsList);
   const [isClicked, setIsClicked] = useState(false);
   const [test123, setTest123] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);  
   const router = useRouter();
 
  useEffect(() => {
@@ -64,6 +65,11 @@ const Navbar = () => {
   setMenuItems(updatedMenuItems);
   setIsClicked(true);
 }, [test123]);
+
+const toggleModal = () => {
+  setIsModalOpen(!isModalOpen);
+  console.log(isModalOpen)
+};
 
   return (
     <header>
@@ -83,14 +89,41 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="buttons-container">
-            <a href="/account">
-              <button className="button-55">
+              <button className="button-55" onClick={toggleModal}>
                 <span> Rezerviraj </span>
               </button>
-            </a>
           </div>
         </div>
       </nav>
+      {isModalOpen && (
+        <div className={`main-modal ${isModalOpen ? 'modal-open' : ''}`}>
+        <button className="close-modal" onClick={toggleModal}>
+          X
+        </button>
+          <div className="testimonials-row3">
+              <div className="testimonial-container">
+                  <div className="brushed-title-container-cover">
+                      <h2 className="brush">Pošaljite upit</h2>
+                  </div>
+              </div>
+          </div>
+          <div className="form-container">
+            <form className="contact-form">
+              {/* Add form fields for name, email, question, etc. */}
+              <label htmlFor="name">Ime:</label>
+              <input type="text" id="name" name="name" />
+
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" name="email" />
+
+              <label htmlFor="question">Vaše pitanje:</label>
+              <textarea id="question" name="question" rows="4" />
+
+              <button className="button-55" type="submit">Pošalji</button>
+            </form>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

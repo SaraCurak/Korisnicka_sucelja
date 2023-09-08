@@ -1,6 +1,7 @@
 import { useState } from 'react'; // Import the useState hook
 
 import Navbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 import Footer2 from '../components/Footer2'
@@ -74,6 +75,7 @@ export default function FAQ() {
   return (
       <div>
         <Navbar />
+        <Sidebar pageWrapId={"page-wrap"} outerContainerId={"Home"} />
         <Navbar2 />
         <div>
             <div className="testimonials-row2">

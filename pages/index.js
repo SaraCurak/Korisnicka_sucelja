@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css'
 import Footer from '../components/Footer'
 import Footer2 from '../components/Footer2'
 import Navbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
 import Main from '../components/Main'
 import Cover from '../components/Cover'
 import Cover1 from '../components/Cover1'
@@ -21,6 +22,7 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Navbar>
+      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"Home"} />
       <Cover />
       <Cover1 />
       <Cover2 />

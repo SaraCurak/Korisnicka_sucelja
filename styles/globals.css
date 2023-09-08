@@ -35,6 +35,15 @@ a {
   color: #4f5884;
 }
 
+.home-hero-button-container .button-55 {
+  height: 44px;
+  margin-top: 8px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4f5884;
+}
+
 .sticky-nav {
   position: fixed;
   top: 0;
@@ -307,7 +316,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    height: fit-content;
+    height: 30vh;
   }
 
   .home-hero-elements {
@@ -2126,4 +2135,226 @@ p {
 
 .modal-submit-button:hover {
   background-color: #0056b3;
+}
+
+.main-modal {
+  position: absolute;
+  z-index: 3;
+  background-color: white;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 32px;
+}
+
+.main-modal .testimonials-row3 {
+  margin-top: 20px;
+}
+
+.main-modal .form-container {
+  width: 80%;
+}
+
+.main-modal .close-modal {
+  border: 0;
+  font-weight: 600;
+  font-size: 32px;
+  color: #6f90af;
+  float: right;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: white;
+  margin-top: 6px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.modal-open {
+  display: unset !important;
+}
+
+.blog-search-container {
+  width: 100%;
+}
+
+.blog-search-container input {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  margin-top: -36px;
+  padding-left: 8px;
+}
+
+.blog-post-image-container {
+  float: left;
+  margin-left: 20px;
+}
+
+.blog-post-content-container {
+  float: left;
+  display: block;
+  padding-top: 40px;
+}
+
+.blog-post {
+  border: 1px solid #6f90af;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 24px;
+  padding-bottom: 48px;
+}
+
+.blog-post:hover {
+  transform: scale(1.02);
+  transition: .25s;
+}
+
+.blog-post-title {
+  color: #6f90af;
+  font-size: 24px;
+}
+
+.blog-post-content {
+  padding-top: 12px;
+  padding-left: 8px;
+}
+
+.blog-post-image {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-top: 20px;
+}
+
+.post-content {
+  font-size: 20px;
+  line-height: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px; 
+}
+
+.post-author {
+  float: right;
+  font-size: 24px;
+  color: gray;
+  font-style: italic;
+}
+
+.post-brush-title {
+  /* width: 200px; */
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* burger bar */
+
+.bm-burger-bars {
+  background-color: white !important;
+}
+
+/* Burger menu */
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+  top: 45%;
+  position: relative;
+}
+
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 16px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--primary-color);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+}
+
+.bm-menu-wrap {
+  width: 50% !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--primary-color);
+  color: white;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+.bm-menu a.menu-item {
+  color: white
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-item {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bm-cross-button {
+  display: none;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+
+@media(min-width: 768px) {
+
+  .home-hero {
+  }
+
+  .home-hero-mobile {
+    display: none;
+  }
+
+  .bm-burger-button {
+    display: none;
+  }
+
 }

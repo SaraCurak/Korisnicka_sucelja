@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "subject": "Newtonovi zakoni kretanja",
+    "content": "Newtonovi zakoni kretanja su temeljna načela fizike koja opisuju ponašanje objekata u pokretu. Ovi zakoni su ključni za razumijevanje dinamike i mehanike tijela. Newtonovi zakoni kretanja su temeljna načela fizike koja opisuju ponašanje objekata u pokretu. Ovi zakoni su ključni za razumijevanje dinamike i mehanike tijela. Newtonovi zakoni kretanja su temeljna načela fizike koja opisuju ponašanje objekata u pokretu. Ovi zakoni su ključni za razumijevanje dinamike i mehanike tijela. Newtonovi zakoni kretanja su temeljna načela fizike koja opisuju ponašanje objekata u pokretu. Ovi zakoni su ključni za razumijevanje dinamike i mehanike tijela. Newtonovi zakoni kretanja su temeljna načela fizike koja opisuju ponašanje objekata u pokretu. Ovi zakoni su ključni za razumijevanje dinamike i mehanike tijela. Newtonovi zakoni kretanja su temeljna načela fizike koja opisuju ponašanje objekata u pokretu. Ovi zakoni su ključni za razumijevanje dinamike i mehanike tijela. Newtonovi zakoni kretanja su temeljna načela fizike koja opisuju ponašanje objekata u pokretu. Ovi zakoni su ključni za razumijevanje dinamike i mehanike tijela.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 2,
+    "subject": "Algebarske jednadžbe i njihova primjena",
+    "content": "Algebarske jednadžbe su osnovni matematički alat koji se koristi u raznim područjima, uključujući fiziku i inženjering. Ovaj članak istražuje osnove i primjene algebarskih jednadžbi. Algebarske jednadžbe su osnovni matematički alat koji se koristi u raznim područjima, uključujući fiziku i inženjering. Ovaj članak istražuje osnove i primjene algebarskih jednadžbi. Algebarske jednadžbe su osnovni matematički alat koji se koristi u raznim područjima, uključujući fiziku i inženjering. Ovaj članak istražuje osnove i primjene algebarskih jednadžbi. Algebarske jednadžbe su osnovni matematički alat koji se koristi u raznim područjima, uključujući fiziku i inženjering. Ovaj članak istražuje osnove i primjene algebarskih jednadžbi. Algebarske jednadžbe su osnovni matematički alat koji se koristi u raznim područjima, uključujući fiziku i inženjering. Ovaj članak istražuje osnove i primjene algebarskih jednadžbi.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 3,
+    "subject": "Periodni sustav elemenata",
+    "content": "Periodni sustav elemenata organizira sve poznate kemijske elemente prema njihovim svojstvima i atomskoj strukturi. Otkrijte kako je organiziran i što nam govori o kemijskim elementima.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 4,
+    "subject": "Klasična mehanika i zakoni očuvanja",
+    "content": "Klasična mehanika je grana fizike koja proučava gibanje objekata pod djelovanjem sile. Ovaj članak istražuje osnovne zakone očuvanja energije, momenta i impulsa.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 5,
+    "subject": "Algoritmi za rješavanje linearnih jednadžbi",
+    "content": "Linearni sustavi jednadžbi često se susreću u matematici i znanosti. Ovaj članak pregledava različite algoritme za njihovo rješavanje i primjene u fizici i inženjeringu.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 6,
+    "subject": "Kemijske reakcije i ravnoteža",
+    "content": "Kemijske reakcije su temeljni procesi u kemijskim sustavima. Ovaj članak istražuje kako reakcije dosežu ravnotežu i kako se to može primijeniti na analizu kemijskih procesa.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 7,
+    "subject": "Elektricitet i magnetizam",
+    "content": "Elektricitet i magnetizam su osnovni koncepti u fizici. Ovaj članak istražuje kako se električna i magnetska polja međusobno povezuju i kako se primjenjuju u svakodnevnom životu.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 8,
+    "subject": "Matematički modeli u fizici",
+    "content": "Matematički modeli su ključni alati za opisivanje i predviđanje fizikalnih fenomena. Ovaj članak razmatra kako se matematički modeli koriste u različitim granama fizike.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 9,
+    "subject": "Geometrijske transformacije i matrice",
+    "content": "Geometrijske transformacije igraju važnu ulogu u fizici i računalnoj grafici. Ovaj članak istražuje kako se matrice koriste za opisivanje transformacija u prostoru.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 10,
+    "subject": "Kemijski elementi i njihova svojstva",
+    "content": "Kemijski elementi čine temeljnu građevinsku jedinicu svih tvari. Ovaj članak pregledava različite kemijske elemente, njihova svojstva i periodične zakone.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 11,
+    "subject": "Toplina i termodinamika",
+    "content": "Toplina i termodinamika su grane fizike koje proučavaju energiju i njezino prenošenje. Ovaj članak istražuje osnovne koncepte topline i termodinamike.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 12,
+    "subject": "Statistika i vjerojatnost u matematici",
+    "content": "Statistika i vjerojatnost igraju ključnu ulogu u analizi podataka i donošenju odluka. Ovaj članak pregledava osnovne statističke metode i koncepte vjerojatnosti.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 13,
+    "subject": "Kemijske veze i molekule",
+    "content": "Kemijske veze definiraju kako se atomi povezuju u molekule. Ovaj članak istražuje različite vrste kemijskih veza i njihove karakteristike.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  },
+  {
+    "id": 14,
+    "subject": "Diferencijalni račun i primjene",
+    "content": "Diferencijalni račun je grana matematike koja se bavi promjenama i stopama promjena. Ovaj članak razmatra diferencijalni račun i primjene u fizici i inženjeringu.",
+    "image": "www.google.com",
+    "author": "Maja Živić"
+  }
+]
