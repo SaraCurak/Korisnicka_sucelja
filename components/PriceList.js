@@ -2,6 +2,7 @@ import React from 'react';
 import icon1 from '../public/images/math.jpg'
 import icon2 from '../public/images/psy.jpg'
 import icon3 from '../public/images/chem.png'
+import Link from 'next/link';
 
 const Pricelist = () => {
   return (<div>
@@ -10,7 +11,7 @@ const Pricelist = () => {
 
       <div className="box">
       <div className="price-list">
-          <a href="/kontakt">
+          <Link href="/kontakt">
         <div className="price-item">
           <div className="col-lg-1 vertical-line-container">
             <div className="vertical-line"></div>
@@ -35,9 +36,9 @@ const Pricelist = () => {
             </div>
           </div>
         </div>
-          </a>
+          </Link>
         
-          <a href="/kontakt">
+          <Link href="/kontakt">
         <div className="price-item">
           <div className="col-lg-1 vertical-line-container">
             <div className="vertical-line"></div>
@@ -62,9 +63,9 @@ const Pricelist = () => {
             </div>
           </div>
         </div>
-        </a>
+        </Link>
 
-        <a href="/kontakt">
+        <Link href="/kontakt">
         <div className="price-item">
           <div className="col-lg-1 vertical-line-container">
             <div className="vertical-line"></div>
@@ -89,7 +90,7 @@ const Pricelist = () => {
             </div>
           </div>
         </div>
-        </a>
+        </Link>
       </div>
       </div>
       </div></div>
